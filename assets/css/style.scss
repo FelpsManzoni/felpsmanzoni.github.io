@@ -5,3 +5,103 @@
 
 // Your tweaks
 .site-title { color: #4ea3ff; }
+
+/* ---------- hamburger morph ---------- */
+.nav-toggle {
+  display: none; /* shown via media query */
+  align-items: center; justify-content: center;
+  width: 44px; height: 36px;
+  border: 1px solid #d0d7de; border-radius: 8px;
+  background: #fff; color: #0969da; cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: ""; display: block;
+  width: 20px; height: 2px; background: currentColor;
+  position: relative; border-radius: 1px;
+  transition: transform .22s ease, opacity .22s ease, background-color .22s ease;
+}
+.hamburger::before, .hamburger::after { position: absolute; left: 0; }
+.hamburger::before { top: -6px; }
+.hamburger::after  { top:  6px; }
+
+/* Morph Hamburguer to X when open */
+.nav-toggle.open .hamburger { background: transparent; }
+.nav-toggle.open .hamburger::before { transform: translateY(6px) rotate(45deg); }
+.nav-toggle.open .hamburger::after  { transform: translateY(-6px) rotate(-45deg); }
+
+/* ---------- desktop nav (unchanged) ---------- */
+.nav { margin: .5rem 0 1rem; }
+.nav-list { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; flex-wrap: wrap; }
+.nav-link { text-decoration: none; padding: .35rem .6rem; border-radius: .5rem; }
+.nav-link:hover { background: #f2f2f2; }
+.nav-link.active { font-weight: 600; outline: 1px solid #e5e7eb; }
+
+/* ---------- mobile overlay ---------- */
+@media (max-width: 640px) {
+    .nav-toggle { display: inline-flex; }
+
+    /* Fullscreen overlay (hidden by default but animatable) */
+    .js .nav {
+        position: fixed; inset: 0; z-index: 2000;
+        display: flex; align-items: center; justify-content: center;
+        background: rgba(0,0,0,.6);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(1px);
+
+        opacity: 0; visibility: hidden; pointer-events: none;
+        transition: none; /* delay hide until fade ends */
+        padding: 24px;
+    }
+
+    /* Opening animation */
+    .js .nav.open {
+        margin: 0;
+        opacity: 1; 
+        visibility: visible; 
+        pointer-events: auto;
+        transition: opacity .24s ease;
+    }
+
+    /* Closing animation */
+    .js .nav.open.closing {
+        opacity: 0; visibility: hidden; pointer-events: none;
+        transition: opacity .22s ease, visibility 0s linear .22s;
+    }
+
+    /* Menu card animation */
+    .nav-list {
+        display: grid;
+        width: min(90vw, 480px);
+        background: #fff; color: #24292f;
+        border-radius: 12px; padding: 8px 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.25);
+
+        transform: translateY(-8px) scale(.98);
+        transition: transform .28s cubic-bezier(.2,.7,.2,1);
+    }
+    .js .nav.open .nav-list { transform: translateY(0) scale(1); }
+
+    .nav-link { display: block; padding: .9rem .25rem; color: #24292f; }
+
+    .nav-link.active {
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #f2f2f2; 
+        box-shadow: 0 10px 30px rgba(0,0,0,.25); 
+    }
+    .nav-link:hover { background: #90b8e4a3; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+    .nav-list li { 
+        font-size: 16px;
+        text-align: center; 
+    }
+
+    body.menu-open { overflow: hidden; }
+}
+
+/* Accessibility: honor reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

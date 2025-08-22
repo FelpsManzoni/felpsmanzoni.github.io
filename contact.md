@@ -1,9 +1,10 @@
 ---
 layout: default
-title: About
-permalink: /about/
+title: Contact Card
+permalink: /contact/
+tags: [contacts]
 ---
 
-# About
+# Contacts
 
-Short bio, photo, links.
+E-mail and other contact methods.

@@ -5,7 +5,7 @@ baseurl: ""
 
 theme: jekyll-theme-minimal
 plugins:
-  - jekyll-remote-theme 
+  - jekyll-remote-theme
   - jekyll-seo-tag
 markdown: kramdown
 
@@ -13,17 +13,9 @@ logo: /
 show_downloads: false
 
 # NAV BAR items configuration:
-#nav:
-#  - title: Home
-#    url: /
-#  - title: About
-#    url: /about/
-#  - title: CV
-#    url: /cv/
-#  - title: Projects
-#    url: /projects/
-#    - submenu:
-#      - title: Research
-#        url: /research/
-#  - title: Contact
-#    url: /contact/
+nav:
+  - { title: Home, url: / }
+  - { title: About, url: /about/ }
+  - { title: CV, url: /cv/ }
+  - { title: Projects, url: /projects/ }
+  - { title: Contact, url: /contact/ }
