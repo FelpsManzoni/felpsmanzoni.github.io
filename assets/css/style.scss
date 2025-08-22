@@ -1,6 +1,7 @@
 ---
 ---
-// Import the theme CSS
+// Import the theme CSS 
+/* ---- Change this import to a local based archive so that I can modify the base theme layout ---*/
 @import "{{ site.theme }}";
 
 // Your tweaks
@@ -32,12 +33,24 @@
 .nav-toggle.open .hamburger::before { transform: translateY(6px) rotate(45deg); }
 .nav-toggle.open .hamburger::after  { transform: translateY(-6px) rotate(-45deg); }
 
-/* ---------- desktop nav (unchanged) ---------- */
-.nav { margin: .5rem 0 1rem; }
+/* ---------- Nav bar on desktop size screens > 640ox ---------- */
+.nav { 
+    margin-top: 10px; 
+    margin-bottom: 15px; 
+}
 .nav-list { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; flex-wrap: wrap; }
-.nav-link { text-decoration: none; padding: .35rem .6rem; border-radius: .5rem; }
+.nav-link { 
+    text-decoration: none; 
+    padding: .35rem .6rem; 
+    border-radius: .5rem;
+    outline: 2px solid #F2F2F2;
+}
 .nav-link:hover { background: #f2f2f2; }
-.nav-link.active { font-weight: 600; outline: 1px solid #e5e7eb; }
+.nav-link.active { 
+    font-weight: 700; 
+    outline: 2px solid #56a1f275; 
+    background: #56a1f275;
+}
 
 /* ---------- mobile overlay ---------- */
 @media (max-width: 640px) {
