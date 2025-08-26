@@ -5,7 +5,22 @@
 @import "{{ site.theme }}";
 
 // Your tweaks
-.site-title { color: #4ea3ff; }
+.site-title { 
+    color: #4ea3ff;
+    margin: auto;
+    margin-left: 0;
+}
+.site-topbar { margin: auto; }
+
+/* ------- Perfil Photo config --------- */
+// Verificar melhoria para apresentar a foto ao lado esquerdo da descrição
+// To-do: Adicionar para que a foto não seja esprimida de forma alguma
+.profile-photo {
+    max-width: 25%;
+    border-radius: 400px;
+    // top right bottom left
+    padding: 10px 0 10px 0;
+}
 
 /* ---------- hamburger morph ---------- */
 .nav-toggle {
@@ -50,6 +65,22 @@
     font-weight: 700; 
     outline: 2px solid #56a1f275; 
     background: #56a1f275;
+}
+
+/* ---- Logo & Description adjsutment ---- */
+.logo-holder { display: block; }
+.description-holder { text-align: justify; }
+
+@media (max-width: 960px) {
+    .logo-holder { display: flex; }
+    .profile-photo-holder {
+        margin: auto;
+        margin-left: 10px;
+    }
+
+    .description-holder {
+        margin: 0;
+    }
 }
 
 /* ---------- mobile overlay ---------- */
@@ -102,7 +133,7 @@
     .nav-link.active {
         font-size: 18px;
         font-weight: bold;
-        background-color: #f2f2f2; 
+        background-color: #56a1f275; 
         box-shadow: 0 10px 30px rgba(0,0,0,.25); 
     }
     .nav-link:hover { background: #90b8e4a3; box-shadow: 0 10px 30px rgba(0,0,0,.25); }

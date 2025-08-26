@@ -9,7 +9,7 @@ plugins:
   - jekyll-seo-tag
 markdown: kramdown
 
-logo: /
+logo: assets/images/Professional_Perfil_Close.png
 show_downloads: false
 
 # NAV BAR items configuration:
