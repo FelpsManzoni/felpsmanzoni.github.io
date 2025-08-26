@@ -4,7 +4,12 @@
 /* ---- Change this import to a local based archive so that I can modify the base theme layout ---*/
 @import "{{ site.theme }}";
 
-// Your tweaks
+// scss style overloading
+.wrapper { 
+    width: 860px; 
+    margin: 0 auto;
+    padding-bottom: 15px; 
+}
 .site-title { 
     color: #4ea3ff;
     margin: auto;
