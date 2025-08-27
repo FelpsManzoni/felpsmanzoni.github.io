@@ -15,16 +15,38 @@
     margin: auto;
     margin-left: 0;
 }
-.site-topbar { margin: auto; }
+.site-topbar { margin: auto; margin-right: 0; }
 
 /* ------- Perfil Photo config --------- */
 // Verificar melhoria para apresentar a foto ao lado esquerdo da descrição
 // To-do: Adicionar para que a foto não seja esprimida de forma alguma
 .profile-photo {
-    max-width: 25%;
-    border-radius: 400px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    flex-shrink: 0;
     // top right bottom left
     padding: 10px 0 10px 0;
+}
+
+/* ---- Logo & Description adjsutment ---- */
+.logo-holder { display: block; }
+.description-holder { text-align: justify; }
+
+@media (max-width: 280px) {
+    .logo-holder { display: block; }
+}
+
+@media (min-width: 281px) and (max-width: 960px) {
+    .logo-holder { display: flex; }
+    .profile-photo-holder {
+        margin: auto;
+        margin-left: 10px;
+    }
+
+    .description-holder {
+        margin: 0;
+    }
 }
 
 /* ---------- hamburger morph ---------- */
@@ -70,22 +92,6 @@
     font-weight: 700; 
     outline: 2px solid #56a1f275; 
     background: #56a1f275;
-}
-
-/* ---- Logo & Description adjsutment ---- */
-.logo-holder { display: block; }
-.description-holder { text-align: justify; }
-
-@media (max-width: 960px) {
-    .logo-holder { display: flex; }
-    .profile-photo-holder {
-        margin: auto;
-        margin-left: 10px;
-    }
-
-    .description-holder {
-        margin: 0;
-    }
 }
 
 /* ---------- mobile overlay ---------- */
