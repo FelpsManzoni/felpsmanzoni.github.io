@@ -4,6 +4,20 @@
 /* ---- Change this import to a local based archive so that I can modify the base theme layout ---*/
 @import "{{ site.theme }}";
 
+.background-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap; /* allow wrapping */
+}
+
+.background-container h3 {
+    margin: 0;
+    flex: 1; /* take available space */
+}
+
 // scss style overloading
 .wrapper { 
     width: 860px; 
@@ -30,6 +44,18 @@
 }
 
 /* ---- Logo & Description adjsutment ---- */
+.logos {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    flex-shrink: 0; /* don’t shrink logos */
+}
+
+.logos img {
+    height: 50px;
+    flex-shrink: 0;
+}
+
 .logo-holder { display: block; }
 .description-holder { text-align: justify; }
 
@@ -154,6 +180,16 @@
     }
 
     body.menu-open { overflow: hidden; }
+
+    .logos {
+      margin-left: 0; /* remove push to right on mobile */
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .background-container {
+        display: block;
+    }
 }
 
 /* Accessibility: honor reduced motion */

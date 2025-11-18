@@ -10,13 +10,13 @@ tags: [biography, about, get to know me, Felipe Manzoni]
 ## Who am I?
 
 <div style="text-align: justify;" markdown="1">
-Felipe Sonntag Manzoni is from the northern part of Brazil, being born and currently living in Manaus/Amazonas. Born in 1996, he received it's bachelor degree in Computer Science for UFAM (Universidade Federal do Amazonas) in 2018, in the same year he started its Master in Informatics on PPGI (Post-Graduation Program in Informatics) at IComp (Instituto de Computação) in UFAM as well, receiving its approval as a master in 2021. Currently Manzoni is a Ph.D. candidate in Informatics on the same institute and university, starting its Ph.D. research in July 2024.
+Felipe Sonntag Manzoni is from the northern part of Brazil, being born and currently living in Manaus/Amazonas. Born in 1996, he received it's bachelor degree in Computer Science from UFAM (Universidade Federal do Amazonas) in 2018, in the same year he started its Master in Informatics on PPGI (Post-Graduation Program in Informatics) at IComp (Instituto de Computação) in UFAM as well, receiving its approval as a master in 2021. Currently Manzoni is a Ph.D. candidate in Informatics on the same institute and university, starting its Ph.D. research in July 2024 with a intend to finish in 2028.
 
 ## Academic Background
 
-- In its Computer Science bachelor degree, Manzoni have studied and overcame different and varied computer science lectures, ranging from development, software engineering, software development agile process, human-computer interactions, software evaluations, IoT, Databases, AI/ML and others.
-- In its Master study, Manzoni conducted a research on Playability evaluation that considered custom sets of heurisitcs based on game characteristics and game genre that allowed non-expert evaluators to conduct fast, replicable and procedural evaluations on games considering an heurisitc evaluation processes.
-- Currently on its Ph.D. studies, Manzoni is focusing on AI/ML development processes and the software engineering for agile definition of AI/ML models and its integration with AI enabled software systems.
+- In its Computer Science bachelor degree, Manzoni have studied and overcame different and varied computer science lectures, ranging from development, software engineering, software development agile process, human-computer interaction, software evaluations, IoT, Databases, AI/ML and others.
+- In its Master study, Manzoni conducted a research on Playability evaluation that considered custom sets of heurisitcs based on game characteristics and game genre that allowed non-expert evaluators to conduct fast, replicable and procedural evaluations on games considering heurisitc evaluation processes.
+- Currently on its Ph.D. studies, Manzoni is focusing on AI/ML development processes and the software engineering for agile definition of AI/ML models and its integration with AI enabled software systems as well as the development of AI systems for SE (_Software Engineering_).
 
 ## Industry Background
 

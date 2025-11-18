@@ -11,21 +11,21 @@ permalink: /cv/
 ---
 
 <!--Verificar porque essa parte não está aplicando as linhas do HTML como deveria e interpretando elas como sendo MarkDown-->
-<div markdown="0">
+<div>
     <div class="background-container">
         <h3>
             <a href="" target="_blank">
-                Ph.D. Candidate in Computer Science - UFAM</br>
-                Software Engineering & Artificial Inteligence</br>
-                </br>
+                Ph.D. Candidate in Computer Science - UFAM<br />
+                Software Engineering & Artificial Inteligence<br />
+                <br />
             </a>
             <a href="/" target="_blank">
-                Master in Computer Science - UFAM</br>
-                Software Engineering & Human-Computer Interaction</br>
-                </br>
+                Master in Computer Science - UFAM<br />
+                Software Engineering & Human-Computer Interaction<br />
+                <br />
             </a>
             <a href="/" target="_blank">
-                Bachelor Degree in Computer Science - UFAM</br>
+                Bachelor Degree in Computer Science - UFAM<br />
             </a>
         </h3>
         <div class="logos">
