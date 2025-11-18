@@ -49,8 +49,8 @@ permalink: /cv/
 <div class="background-container">
   <h3>
     <a href="https://www.linkedin.com/in/felipe-sonntag-manzoni/" target="_blank">
-      Senior Software Quality Analyst</br>
-      Multiple Companies
+      Senior Software Quality Analyst<br />
+      <h4>Multiple Companies</h4>
     </a>
   </h3>
   <div class="logos">
@@ -68,12 +68,13 @@ permalink: /cv/
 
 <ul class="bullets">
   <li> Develop activities and be responsible for the overall quality and testing efforts of all the software deliverables inside the allocated project. Having the main activities as described:
-  <ul> 
-    <li> Automated Test Development; </li> 
-    <li> Test Management; </li>
-    <li> Software Development Process Engineering; </li>
-    <li> Software Quality Evaluation and CI/CD Quality </li>
-  </ul>
+    <ul> 
+      <li> Automated Test Development; </li> 
+      <li> Test Management; </li>
+      <li> Software Development Process Engineering; </li>
+      <li> Software Quality Evaluation and CI/CD Quality </li>
+    </ul>
+  </li>
 </ul>
   
 ---
