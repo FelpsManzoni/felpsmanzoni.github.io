@@ -16,16 +16,15 @@ permalink: /cv/
         <h3>
             <a href="" target="_blank">
                 Ph.D. Candidate in Computer Science - UFAM<br />
-                Software Engineering & Artificial Inteligence<br />
-                <br />
+                <h6>Software Engineering & Artificial Inteligence - 2024-current<br /></h6>
             </a>
             <a href="/" target="_blank">
                 Master in Computer Science - UFAM<br />
-                Software Engineering & Human-Computer Interaction<br />
-                <br />
+                <h6>Software Engineering & Human-Computer Interaction - 2018-2021<br /></h6>
             </a>
             <a href="/" target="_blank">
                 Bachelor Degree in Computer Science - UFAM<br />
+                <h6>2014-2018</h6>
             </a>
         </h3>
         <div class="logos">
@@ -38,7 +37,7 @@ permalink: /cv/
         </div>
     </div>
     <p style="text-align: justify;">
-        Bachelor degree in Computer Science in 2018, Master in Computer Science with focus in SE and HCI applied to games evaluations. Ph.D. candidate in Computer Science with focus on the field of SE for AI/ML.
+        Bachelor degree in Computer Science in 2018, Master in Computer Science with focus in SE and HCI applied to games evaluations. Ph.D. candidate in Computer Science with focus on the field of SE for AI/ML <i>(SE4AI)</i> as well as in the field of AI/ML for SE <i>(AI4SE)</i>.
     </p>
 </div>
 
@@ -50,7 +49,7 @@ permalink: /cv/
   <h3>
     <a href="https://www.linkedin.com/in/felipe-sonntag-manzoni/" target="_blank">
       Senior Software Quality Analyst<br />
-      <h4>Multiple Companies</h4>
+      <h5>Multiple Companies</h5>
     </a>
   </h3>
   <div class="logos">
@@ -82,8 +81,9 @@ permalink: /cv/
 <div class="background-container">
   <h3>
     <a href="https://www.in.gov.br/web/dou/-/extratos-de-termos-aditivos-647954691" target="_blank">
-      Substitute Teacher</br>
-      Instituto de Computação - Universidade Federal do Amazonas (UFAM)
+      Substitute Teacher<br />
+      <h5>Instituto de Computação - IComp <br />
+      Universidade Federal do Amazonas - UFAM</h5>
     </a>
   </h3>
   <div class="logos">
@@ -103,6 +103,7 @@ permalink: /cv/
       <li> (Teacher) Verification, Validation and Testing; </li>
       <li> (Monitor) Practice in Software Engineering </li>
     </ul>
+  </li>
 </ul>
 
 ---
@@ -110,8 +111,8 @@ permalink: /cv/
 <div class="background-container">
   <h3>
     <a href="" target="_blank">
-      Managing Partner</br>
-      Manzoni's Franquias - Mestre da Obra BV
+      Managing Partner<br />
+      <h5>Manzoni's Franquias - Mestre da Obra BV</h5>
     </a>
   </h3>
   <div class="logos">
@@ -129,6 +130,7 @@ permalink: /cv/
       <li> Unit processes, improvements and strategy; </li>
       <li> Management of unit employees; </li>
     </ul>
+  </li>
 </ul>
 
 ---
@@ -150,7 +152,7 @@ permalink: /cv/
 
 <ul class="bullets">
   <li class="starred">
-    Felipe S. Manzoni, Tayana Uchôa Conte, Milene Silveira, Simone Barbosa. </br>
+    Felipe S. Manzoni, Tayana Uchôa Conte, Milene Silveira, Simone Barbosa. <br />
     <a href="http://dx.doi.org/10.5220/0013398700003929">
       <strong>
         Straight to the Point - Evaluating What Matters for You: A Comparative Study on Playability Heuristic Sets.
@@ -159,7 +161,7 @@ permalink: /cv/
     <em>Proceedings of the 22nd International Conference on Enterprise Information Systems. 2020, Prague/Czech Republic, v. 2. p. 499-510.</em>
   </li>
   <li class="starred">
-    Felipe S. Manzoni, Bruna Moraes Ferreira, Tayana Uchôa Conte. </br>
+    Felipe S. Manzoni, Bruna Moraes Ferreira, Tayana Uchôa Conte. <br />
     <a href="http://dx.doi.org/10.5220/0006695604510462">
       <strong>
         NExPlay - Playability Assessment for Non-experts Evaluators.
@@ -168,7 +170,7 @@ permalink: /cv/
     <em>Proceedings of the 20th International Conference on Enterprise Information Systems, 2018, Funchal/Portugal, v. 2. p. 451-462.</em>
   </li>
   <li>
-    Felipe S. Manzoni, Rávella Rodrigues, Ana Carolina Oran Rocha. </br>
+    Felipe S. Manzoni, Rávella Rodrigues, Ana Carolina Oran Rocha. <br />
     <a href="http://dx.doi.org/10.5220/0013398700003929">
       <strong>
         Exploring the Use of ChatGPT for the Generation of User Story Based Test Cases: An Experimental Study.
@@ -182,11 +184,11 @@ permalink: /cv/
 
 <ul>
   <li>
-    Felipe S. Manzoni, Ana Carolina Oran, Leonardo Carneiro Marques. </br>
+    Felipe S. Manzoni, Ana Carolina Oran, Leonardo Carneiro Marques. <br />
     <strong>Let's Talk About Quality: a decade of gathered AI/ML project development knowledge.</strong>
   </li>
   <li>
-    Felipe S. Manzoni, Camilla Rosas Gomes, Rayssa Campos dos Reis, Ana Carolina Oran, Leonardo Carneiro Marques. </br>
+    Felipe S. Manzoni, Camilla Rosas Gomes, Rayssa Campos dos Reis, Ana Carolina Oran, Leonardo Carneiro Marques. <br />
     <strong>Structuring a Development Process for AI/ML Projects: a look into industry driven issues.</strong>
   </li>
 </ul>
