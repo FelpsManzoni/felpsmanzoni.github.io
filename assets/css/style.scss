@@ -1,0 +1,261 @@
+---
+---
+// Import the theme CSS 
+/* ---- Change this import to a local based archive so that I can modify the base theme layout ---*/
+@import "{{ site.theme }}";
+
+section {
+    margin-top: 25px;
+}
+
+header {
+    margin-top: 15px;
+}
+
+/* ---------- Fixed top bar ---------- */
+.top-bar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1500;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* centers content to align with Minimal theme's wrapper */
+.top-bar-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0.5rem 5px;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+/* title inside top bar; let the left card keep its own title style if you wish */
+.top-bar-title {
+  margin: 0;
+}
+
+/* Optional: subtle shadow so it feels like a bar */
+.top-bar-fixed {
+  box-shadow: 0 2px 4px rgba(0,0,0,.06);
+}
+
+.background-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.background-container h3 {
+    margin: 0;
+    flex: 1; /* take available space */
+}
+
+// scss style overloading
+.wrapper { 
+    width: 860px; 
+    margin: 0 auto;
+    padding: 5rem 5px 5px;      /* top ≈ bar height; adjust if needed */
+}
+.site-title { 
+    color: #4ea3ff;
+    margin: auto;
+    margin: 0.5rem 0 0;
+}
+.site-topbar { margin: auto; margin-right: 0; }
+
+/* ------- Perfil Photo config --------- */
+// Verificar melhoria para apresentar a foto ao lado esquerdo da descrição
+// To-do: Adicionar para que a foto não seja esprimida de forma alguma
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    // top right bottom left
+    padding: 10px 0 10px 0;
+}
+
+/* ---- Logo & Description adjsutment ---- */
+.logos {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    flex-shrink: 0; /* don’t shrink logos */
+}
+
+.logos img {
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.logo-holder { display: block; }
+.description-holder { text-align: justify; }
+
+@media (max-width: 280px) {
+    .logo-holder { display: block; }
+}
+
+@media (min-width: 281px) and (max-width: 960px) {
+    .logo-holder { display: flex; }
+    .profile-photo-holder {
+        margin: auto;
+        margin-left: 10px;
+    }
+
+    .description-holder {
+        margin: 0;
+    }
+}
+
+/* ---------- hamburger morph ---------- */
+.nav-toggle {
+  display: none; /* shown via media query */
+  align-items: center; justify-content: center;
+  width: 44px; height: 36px;
+  border: 1px solid #d0d7de; border-radius: 8px;
+  background: #fff; color: #0969da; cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: ""; display: block;
+  width: 20px; height: 2px; background: currentColor;
+  position: relative; border-radius: 1px;
+  transition: transform .22s ease, opacity .22s ease, background-color .22s ease;
+}
+.hamburger::before, .hamburger::after { position: absolute; left: 0; }
+.hamburger::before { top: -6px; }
+.hamburger::after  { top:  6px; }
+
+/* morph to X when open */
+.nav-toggle.open .hamburger { background: transparent; }
+.nav-toggle.open .hamburger::before { transform: translateY(6px) rotate(45deg); }
+.nav-toggle.open .hamburger::after  { transform: translateY(-6px) rotate(-45deg); }
+
+/* ---------- Nav bar on desktop size screens > 640ox ---------- */
+.nav { 
+    margin: 1.2rem 0 0.7rem;
+}
+.nav-list { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; flex-wrap: wrap; }
+.nav-link { 
+    text-decoration: none; 
+    padding: .35rem .6rem; 
+    border-radius: .5rem;
+    outline: 2px solid #F2F2F2;
+}
+.nav-link:hover { background: #f2f2f2; }
+.nav-link.active { 
+    font-weight: 700; 
+    outline: 2px solid #56a1f275; 
+    background: #56a1f275;
+}
+
+/* ---------- mobile overlay ---------- */
+@media (max-width: 640px) {
+    .nav-toggle { 
+        display: inline-flex;
+        align-self: center;
+    }
+
+    /* Fullscreen overlay (hidden by default but animatable) */
+    .js .nav {
+        position: fixed; inset: 0; z-index: 2000;
+        display: flex; align-items: center; justify-content: center;
+        background: rgba(0,0,0,.6);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(1px);
+
+        opacity: 0; visibility: hidden; pointer-events: none;
+        transition: none; /* <- key: no auto fade when breakpoint is hit */
+        padding: 24px;
+    }
+
+    /* Opening animation */
+    .js .nav.open {
+        margin: 0;
+        opacity: 1; visibility: visible; pointer-events: auto;
+        transition: opacity .24s ease;
+    }
+
+    /* Closing animation (open → closed) */
+    .js .nav.open.closing {
+        opacity: 0; visibility: hidden; pointer-events: none;
+        transition: opacity .22s ease, visibility 0s linear .22s;
+    }
+
+    /* Menu card animation */
+    .nav-list {
+        display: grid;
+        width: min(90vw, 480px);
+        background: #fff; color: #24292f;
+        border-radius: 12px; padding: 8px 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.25);
+
+        transform: translateY(-8px) scale(.98);
+        transition: transform .28s cubic-bezier(.2,.7,.2,1);
+    } 
+    .js .nav.open .nav-list { transform: translateY(0) scale(1); }
+
+    .nav-link { display: block; padding: .9rem .25rem; color: #24292f; }
+
+    .nav-link.active {
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #56a1f275; 
+        box-shadow: 0 10px 30px rgba(0,0,0,.25); 
+    }
+    .nav-link:hover { background: #90b8e4a3; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+    .nav-list li { 
+        font-size: 16px;
+        text-align: center; 
+    }
+
+    /* prevent background scroll when menu is open */
+    body.menu-open { overflow: hidden; }
+
+    .logos {
+      margin-left: 0; /* remove push to right on mobile */
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .background-container {
+        display: block;
+    }
+
+    .top-bar-fixed {
+        min-height: 100px;     /* your requirement */
+        display: flex;
+        align-items: center;   /* center vertically */
+    }
+
+    .top-bar-inner {
+        width: 100%;
+        max-width: 860px;      /* same as wrapper */
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: row; /* stack title above hamburger */
+        /*justify-content: center; horizontal centering */
+        align-items: center;    /* horizontal centering */
+
+        padding: 10px 25px;        /* equal top/bottom padding */
+        text-align: center;     /* center title text */
+    }
+
+    .top-bar-title {
+        margin: 0;
+        text-align: left;
+    }
+}
+
+/* Accessibility: honor reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

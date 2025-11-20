@@ -1,0 +1,22 @@
+title: "MSc. Felipe S. Manzoni"
+description: "Call me Manzoni, MSc. in Computer Science, Ph.D. candidate in SE for AI/ML and Data Science."
+url: "https://felpsmanzoni.github.io"
+baseurl: ""
+
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+markdown: kramdown
+
+logo: assets/images/Professional_Perfil_Close.png
+show_downloads: false
+
+# NAV BAR items configuration:
+nav:
+  - { title: Home, url: / }
+  - { title: About, url: /about/ }
+  - { title: Blog, url: /blog/ }
+  - { title: CV, url: /cv/ }
+  - { title: Projects, url: /projects/ }
+  - { title: Contact, url: /contact/ }
