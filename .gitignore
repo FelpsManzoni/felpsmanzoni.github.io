@@ -1,0 +1,40 @@
+# ==== Jekyll ====
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# ==== Bundler / Ruby ====
+.bundle/
+vendor/
+vendor/bundle/
+vendor/cache/
+vendor/gems/
+vendor/ruby/
+
+# ==== Node (se usar tooling JS) ====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==== Editores / SO ====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.code-workspace
+
+# ==== Variáveis de ambiente / configs locais ====
+.env
+.env.*.local
+
+# ==== Temporários ====
+*.swp
+*.swo
+*~
+.tmp/
+.cache/
+
+Gemfile.lock
