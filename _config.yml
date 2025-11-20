@@ -18,5 +18,5 @@ nav:
   - { title: About, url: /about/ }
   - { title: Blog, url: /blog/ }
   - { title: CV, url: /cv/ }
-  - { title: Projects, url: /projects/ }
-  - { title: Contact, url: /contact/ }
+#  - { title: Projects, url: /projects/ }
+#  - { title: Contact, url: /contact/ }
