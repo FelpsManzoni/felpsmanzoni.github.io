@@ -9,7 +9,7 @@ plugins:
   - jekyll-seo-tag
 markdown: kramdown
 
-logo: assets/images/Professional_Perfil_Close.png
+logo: assets/images/Professional_Perfil_Close.jpg
 show_downloads: false
 
 # NAV BAR items configuration:
@@ -18,5 +18,5 @@ nav:
   - { title: About, url: /about/ }
   - { title: Blog, url: /blog/ }
   - { title: CV, url: /cv/ }
-#  - { title: Projects, url: /projects/ }
+  - { title: Projects, url: /projects/ }
 #  - { title: Contact, url: /contact/ }

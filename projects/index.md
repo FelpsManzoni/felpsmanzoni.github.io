@@ -16,25 +16,27 @@ permalink: /projects/
         <p>
             <h3> PhD. Research - SE4AI process development </h3>
             <h3>2026</h3>
+            <h4 style="margin: 0; font-size: 15px">
+                <a href="https://felpsmanzoni.github.io/projects/research/se4ai_icse_2026" target="_blank">
+                    SE4AI: Structured AI/ML Enabled Software Development Process
+                </a>
+            </h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+                International Conference on Software Engineering (ICSE) 2026 - Doctoral Symposium Trach
+            </h4>
+            <h4 style="font-weight: normal;">Rio de Janeiro/RJ - Brazil</h4>
+<!--             <h3>2025</h3>
             <h6>
                 <a href="https://felpsmanzoni.github.io/SE4AI_ICSE_DS_2026/" target="_blank">
                     SE4AI: Structured AI/ML Enabled Software Development Process
                 </a></br>
                 Doctoral Symposium (DS) - ICSE 2026</br>
                 Rio de Janeiro/RJ - Brazil
-            </h6>
-            <h3>2025</h3>
-            <h6>
-                <a href="https://felpsmanzoni.github.io/SE4AI_ICSE_DS_2026/" target="_blank">
-                    SE4AI: Structured AI/ML Enabled Software Development Process
-                </a></br>
-                Doctoral Symposium (DS) - ICSE 2026</br>
-                Rio de Janeiro/RJ - Brazil
-            </h6>
+            </h6> -->
         </p>
     </div>
 </div>
-
+<!-- 
 ### Work
 
 ---
@@ -126,7 +128,7 @@ permalink: /projects/
     </ul>
   </li>
 </ul>
-
+ -->
 ---
 
 ## Research and Development Interests
@@ -139,7 +141,7 @@ permalink: /projects/
 </ul>
 
 ---
-
+<!-- 
 ## Selected Publications
 
 ### Conference Papers
@@ -173,7 +175,7 @@ permalink: /projects/
     <em>Proceedings of the 27th International Conference on Enterprise Information Systems, 2025, Porto/Portugual, v. 2. p. 292-299.</em>
   </li>
 </ul>
-
+ -->
 ### Under Development
 
 <ul>
@@ -205,7 +207,7 @@ I gratefully acknowledge the financial and institutional support provided by the
 
 ---
 -->
-
+<!-- 
 ## Certifications and Other refs
 
 I am currently:
@@ -227,3 +229,4 @@ I am currently:
     </a>
   </li>
 </ul>
+ -->
