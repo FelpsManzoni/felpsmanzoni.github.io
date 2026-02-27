@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SE4AI (ICSE DS 2026) — References & Resources</title>
+  <style>
+    :root{--bg:#0b0c10;--card:#11131a;--text:#e8eaf0;--muted:#b2b7c6;--link:#7aa2ff;--border:#23283a;}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:var(--bg);color:var(--text);}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px;}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;}
+    h1{font-size:1.35rem;margin:0 0 8px;}
+    h2{font-size:1.05rem;margin:18px 0 10px;}
+    p,li{color:var(--muted);line-height:1.45;}
+    a{color:var(--link);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .meta{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:8px;}
+    .pill{font-size:.86rem;padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;}
+    @media (min-width: 880px){.grid{grid-template-columns:1.25fr .75fr;}}
+    .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;}
+    .btn{display:inline-block;padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:#0f1220;}
+    .refs ol{padding-left:18px;}
+    pre{white-space:pre-wrap;margin:0;background:#0f1220;border:1px solid var(--border);border-radius:12px;padding:12px;color:var(--text);}
+    code{background:#0f1220;border:1px solid var(--border);padding:2px 6px;border-radius:8px;}
+    footer{margin-top:16px;color:var(--muted);font-size:.9rem;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="grid">
+
+      <div class="card">
+        <h1>SE4AI: Structured AI/ML Enabled Software Development Process</h1>
+        <p><strong>Author:</strong> Felipe Sonntag Manzoni (UFAM / IComp; SiDi AI R&D)</p>
+        <p><strong>Venue:</strong> ICSE-Companion ’26 (Doctoral Symposium), Rio de Janeiro, Brazil</p>
+
+        <div class="meta">
+          <span class="pill">Poster companion page</span>
+          <span class="pill">Last updated: <span id="last"></span></span>
+        </div>
+
+        <h2>TL;DR (1-minute)</h2>
+
+        <div style="
+          margin-top:20px;
+          padding:10px;
+          border:1px solid #23283a;
+          border-radius:10px;
+          text-align:center;
+          background:#0f1220;
+        ">
+          <p style="margin-bottom:10px; font-weight:500;">
+            🎧 1-Minute Audio Summary
+          </p>
+
+          <audio controls style="width:100%; max-width:520px;">
+            <source src="../assets/se4ai-1min.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p style="margin-top:10px; font-size:0.9rem; opacity:0.85;">
+            Prefer reading? The TL;DR bellow is designed to be read in about a minute.
+          </p>
+        </div>
+
+        <h2>Abstract</h2>
+        <p>
+          Most organizations developing software that depends on AI/ML models often rely on ad hoc or unstructured development practices.
+          In many cases, the model and the surrounding software are developed separately, leading to several problems—particularly regarding the quality of the model, the compatibility of the system in which
+          the model is embedded, and the overall suitability of the resulting system to the problem domain. Although prior research has addressed specific aspects of this process and proposed improvements
+          for isolated phases, a comprehensive, quality-oriented development framework is still lacking. This doctoral research aims to propose
+          an enhanced development process that addresses these gaps and opportunities, ensuring both methodological rigor and the delivery
+          of reliable, high-quality AI/ML-enabled systems.
+        </p>
+
+        <h2>1-Minute content resume</h2>
+
+        <p><strong>Problem:</strong> AI/ML-enabled systems are often built with ad hoc practices, where model development and surrounding software evolve separately—creating quality, integration, and reproducibility risks.</p>
+        <p><strong>Proposal:</strong> <strong>SE4AI</strong> is a structured, quality-oriented development process for AI/ML-enabled software that integrates AI/ML-specific activities and explicit quality checkpoints across the lifecycle.</p>
+        <p><strong>Method:</strong> The process is refined and validated through evidence-based research methods (e.g., SLR/grounded theory) and empirical evaluation (experiments and industrial case studies).</p>
+        <p><strong>Expected impact:</strong> Better structure, traceability, and reliability—bridging the gap between experimentation and production-ready AI software.</p>
+
+        <h2>Resources</h2>
+        <div class="btns">
+          <!-- Fill these with your real links -->
+          <a class="btn" href="../assets/ICSE_2026_Doctoral_Symposium.pdf" target="_blank" rel="noopener">📄 Paper (PDF)</a>
+          <a class="btn" href="../assets/Poster_ICSE_Doctoral_2026_Manzoni.pdf" target="_blank" rel="noopener">🖼️ Poster (PDF)</a>
+          <a class="btn" href="YOUR_LINK_TO_SLIDES_OR_APPENDIX" target="_blank" rel="noopener">📎 Appendix</a>
+        </div>
+
+        <h2>Full References</h2>
+        <div class="refs">
+          <ol>
+            <li>Angelantonio Castelli, Georgios Christos Chouliaras, and Dmitri Goldenberg. 2025. <em>Maturity Framework for Enhancing Machine Learning Quality</em>. KDD ’25. doi:10.1145/3711896.3737246</li>
+            <li>Rashina Hoda. 2022. <em>Socio-Technical Grounded Theory for Software Engineering</em>. IEEE TSE 48(10). doi:10.1109/TSE.2021.3106280</li>
+            <li>Barbara Kitchenham et al. 2009. <em>Systematic literature reviews in software engineering – A systematic literature review</em>. IST 51(1). doi:10.1016/j.infsof.2008.09.009</li>
+            <li>Giuliano Lorenzoni et al. 2021. <em>Machine Learning Model Development from a Software Engineering Perspective: A Systematic Literature Review</em>. arXiv:2102.07574</li>
+            <li>Lucy Ellen Lwakatare et al. 2020. <em>Large-scale machine learning systems in real-world industrial settings</em>. IST 127:106368. doi:10.1016/j.infsof.2020.106368</li>
+            <li>Sômulo Mafra, Rafael Barcelos, and Guilherme Travassos. 2006. <em>Aplicando uma Metodologia Baseada em Evidência...</em> SBES. doi:10.5753/sbes.2006.21216</li>
+            <li>Silverio Martínez-Fernández et al. 2022. <em>Software Engineering for AI-Based Systems: A Survey</em>. TOSEM 31(2). doi:10.1145/3487043</li>
+            <li>Elizamary Nascimento et al. 2020. <em>Software engineering for artificial intelligence and machine learning software: A systematic literature review</em>. arXiv:2011.03751</li>
+            <li>Alex Serban et al. 2020. <em>Adoption and Effects of Software Engineering Best Practices in Machine Learning</em>. ESEM ’20. doi:10.1145/3382494.3410681</li>
+            <li>Forrest Shull, Jeffrey Carver, and Guilherme H. Travassos. 2001. <em>An empirical methodology for introducing software processes</em>. ESEC/FSE-9. doi:10.1145/503209.503248</li>
+            <li>Klaas-Jan Stol, Paul Ralph, and Brian Fitzgerald. 2016. <em>Grounded theory in software engineering research: a critical review and guidelines</em>. ICSE ’16. doi:10.1145/2884781.2884833</li>
+          </ol>
+        </div>
+
+        <h2>Cite this work (BibTeX)</h2>
+        <pre>
+@inproceedings{manzoni2026se4ai,
+  title     = {SE4AI: Structured AI/ML Enabled Software Development Process},
+  author    = {Felipe Sonntag Manzoni},
+  booktitle = {2026 IEEE/ACM 48th International Conference on Software Engineering (ICSE-Companion '26)},
+  year      = {2026},
+  address   = {Rio de Janeiro, Brazil}
+}
+        </pre>
+
+        <div style="margin-top:20px; display:flex; justify-content:center; align-items:center; gap:10px; font-size:1.05rem;">
+          <span>How about a espresso patronum? </span>
+          <a href="https://ko-fi.com/manzoni" target="_blank" rel="noopener"
+            style="display:inline-flex; align-items:center;">
+            <img src="https://storage.ko-fi.com/cdn/brandasset/v2/kofi_symbol.png"
+                alt="Support me on Ko-fi"
+                style="height:32px;">
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Contact</h2>
+        <p>
+          <strong>Felipe Sonntag Manzoni</strong><br/>
+          Federal University of Amazonas (UFAM) — Manaus, Brazil<br/>
+          SiDi Innovation & Intelligence Center — AI R&amp;D department<br/>
+          Email: <a href="mailto:fsm2@icomp.ufam.edu.br">fsm2@icomp.ufam.edu.br</a>
+        </p>
+        <div style="
+          margin-top:28px;
+          padding-top:18px;
+          border-top:1px solid #23283a;
+          text-align:center;
+        ">
+          <p style="margin-bottom:14px; font-weight:500;">Affiliations/Supporters</p>
+
+          <div style="
+              display:flex;
+              justify-content:center;
+              align-items:center;
+              gap:50px;
+              flex-wrap:wrap;
+          ">
+            <a href="https://ufam.edu.br" target="_blank" rel="noopener">
+              <img src="https://edoc.ufam.edu.br/bitstream/123456789/4819/7/marca_ufam_vetor_positivo.png"
+                  alt="UFAM"
+                  style="height:65px;">
+            </a>
+
+            <a href="https://www.sidi.org.br" target="_blank" rel="noopener">
+              <img src="https://ebdicorp.com.br/wp-content/uploads/2026/01/SIDI-768x320.png"
+                  alt="SiDi"
+                  style="height:65px;">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      Companion page for the ICSE-Companion ’26 Doctoral Symposium poster/paper.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("last").textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
