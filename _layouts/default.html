@@ -62,13 +62,20 @@
 
             <footer>
                 {% if site.github.is_project_page %}
-                <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-
                 <p class="view">
-                    <a href="{{ site.github.repository_url }}">
-                        View the Project on GitHub <small>{{ site.github.repository_nwo }}</small>
+                    <a href="{{ site.github.owner_url }}">
+                        View My GitHub Profile
                     </a>
                 </p>
+                <div style="margin-top:20px; display:flex; justify-content:left; align-items:center; gap: 5px;">
+                    <span>How about a espresso patronum? </span>
+                    <a href="https://ko-fi.com/manzoni" target="_blank" rel="noopener"
+                        style="display:inline-flex; align-items:center;">
+                        <img src="https://storage.ko-fi.com/cdn/brandasset/v2/kofi_symbol.png"
+                            alt="Support me on Ko-fi"
+                            style="height:32px;">
+                    </a>
+                </div>
                 {% endif %}
 
                 {% if site.github.is_user_page %}
