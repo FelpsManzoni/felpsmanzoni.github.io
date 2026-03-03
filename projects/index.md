@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: projects
 title: Projects and publications
 permalink: /projects/
+page_intro: Ongoing research projects, selected publications, and work currently under development.
 ---
-
 ## Projects
 
 ### Research
@@ -25,14 +25,55 @@ permalink: /projects/
                 International Conference on Software Engineering (ICSE) 2026 - Doctoral Symposium Trach
             </h4>
             <h4 style="font-weight: normal;">Rio de Janeiro/RJ - Brazil</h4>
-<!--             <h3>2025</h3>
-            <h6>
-                <a href="https://felpsmanzoni.github.io/SE4AI_ICSE_DS_2026/" target="_blank">
-                    SE4AI: Structured AI/ML Enabled Software Development Process
-                </a></br>
-                Doctoral Symposium (DS) - ICSE 2026</br>
-                Rio de Janeiro/RJ - Brazil
-            </h6> -->
+            <h3>2025</h3>
+            <h4 style="margin: 0; font-size: 15px">
+                <a href="https://www.scitepress.org/PublicationsDetail.aspx?ID=WtV8O51a2vY=&t=1" target="_blank">
+                    Exploring the Use of ChatGPT for the Generation of User Story Based Test Cases: An Experimental Study
+                </a>
+            </h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+                International Conference on Enterprise Information Systems (ICEIS) 2025
+            </h4>
+            <h4 style="font-weight: normal;">Porto - Portugal</h4>
+            <h3>2021</h3>
+            <h4 style="margin: 0; font-size: 15px">
+                <a href="https://tede.ufam.edu.br/bitstream/tede/8820/13/Dissertac%CC%A7a%CC%83o_FelipeManzoni_PPGI.pdf" target="_blank">
+                    Digital Games Playability Assessment Through Customizable Heuristic Sets With Non-Expert Evaluators
+                </a>
+            </h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+                Master Thesis - PPGI/UFAM (TEDE-UFAM)
+            </h4>
+            <h4 style="font-weight: normal;">Mater Thesis - Online Archived</h4>
+            <h3>2020</h3>
+            <h4 style="margin: 0; font-size: 15px">
+                <a href="https://repositorio.pucrs.br/dspace/bitstream/10923/19901/2/Straight_to_the_Point_Evaluating_What_Matters_for_You_A_Comparative_Study_on_Playability_Heuristic_Sets.pdf" target="_blank">
+                    Straight to the Point - Evaluating What Matters for You: A Comparative Study on Playability Heuristic Sets
+                </a>
+            </h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+                International Conference on Enterprise Information Systems (ICEIS) 2020
+            </h4>
+            <h4 style="font-weight: normal;">Online Streaming (COVID Pandemic acts)</h4>
+            <h4 style="margin: 0; font-size: 15px">
+                <a href="https://scholar.archive.org/work/us5huw7qbba3dfbahpimjd4caa/access/wayback/https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/21804993/V6_TR_USES_2019_003.pdf" target="_blank">
+                    Playability Heuristic Set Comparative Study: Support Material for CustomCheck4Play
+                </a>
+            </h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+                Online archive - additional material for publication
+            </h4>
+            <h4 style="font-weight: normal;">Online Archive</h4>
+            <h3>2018</h3>
+            <h4 style="margin: 0; font-size: 15px">
+                <a href="https://www.scitepress.org/PublicationsDetail.aspx?ID=WtV8O51a2vY=&t=1" target="_blank">
+                    NExPlay - Playability Assessment for Non-experts Evaluators
+                </a>
+            </h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+                International Conference on Enterprise Information Systems (ICEIS) 2018
+            </h4>
+            <h4 style="font-weight: normal;">Funchal, Madeira - Portugal</h4>
         </p>
     </div>
 </div>

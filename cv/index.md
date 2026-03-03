@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: reading
 title: Curriculum Vitae
 permalink: /cv/
+page_intro: Academic background, professional experience, publications, and technical interests.
 ---
-
 ## Background
 
 ### Academic

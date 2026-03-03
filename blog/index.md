@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: reading
 title: Manzoni's Blog
 permalink: /blog/
+page_intro: Notes, updates, and reflections on research, software quality, and engineering practice.
 ---
-
-## Hey, how about some different content and news?!
 
 <div markdown="0">
     <p style="text-align: justify;">

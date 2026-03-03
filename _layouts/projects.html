@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {% seo %}
+        <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    </head>
+
+    <body style="padding: 20px;">
+        <div class="wrapper">
+            {% include head-custom.html %}
+
+            <!-- NEW: fixed top bar (full width) -->
+            <div class="top-bar-fixed">
+                <div class="top-bar-inner">
+                    <h1 class="site-title top-bar-title">
+                        <a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a>
+                    </h1>
+
+                    <!-- hamburger button (mobile) -->
+                    <button class="nav-toggle" aria-expanded="false"
+                            aria-controls="primary-nav" aria-label="Open menu">
+                        <span class="hamburger" aria-hidden="true"></span>
+                    </button>
+
+                    {% include nav.html %}
+                </div>
+            </div>
+
+            <!-- header goes back to being only the left card -->
+            <header>
+                <div class="logo-holder">
+                {% if site.logo %}
+                  <img src="{{site.logo | relative_url}}" alt="Profile Photo" class="profile-photo" />
+                {% endif %}
+                    <div class="card">
+                        <h2>Contact</h2>
+                        <p>
+                            <strong>Felipe Sonntag Manzoni</strong><br/>
+                            Want to colaborate or discuss about any research topic? Shoot me an email!<br/>
+                            Federal University of Amazonas (UFAM) - PPGI/IComp — Manaus, Brazil<br/>
+                            Email: <a href="mailto:fsm2@icomp.ufam.edu.br">fsm2@icomp.ufam.edu.br</a>
+                        </p>
+                        <div style="
+                        margin-top:28px;
+                        padding-top:18px;
+                        border-top:1px solid #23283a;
+                        text-align:center;
+                        ">
+                            <p style="margin-bottom:14px; font-weight:500;">
+                                Affiliations
+                            </p>
+
+                            <div style="
+                                display:flex;
+                                justify-content:center;
+                                align-items:center;
+                                gap:50px;
+                                flex-wrap:wrap;
+                            ">
+                                <a href="https://ufam.edu.br" target="_blank" rel="noopener">
+                                    <img src="https://edoc.ufam.edu.br/bitstream/123456789/4819/7/marca_ufam_vetor_positivo.png"
+                                        alt="UFAM"
+                                        style="height:65px;">
+                                </a>
+                                <a href="https://icomp.ufam.edu.br/" target="_blank" rel="noopener">
+                                    <img src="/assets/images/sphere_logo_nobg.png"
+                                        alt="SPHERE Research Group - PPGI-IComp"
+                                        style="height:65px;">
+                                </a>
+                            </div>
+                            <div style="
+                                display:flex;
+                                justify-content:center;
+                                align-items:center;
+                                padding-top: 10px;
+                                gap:50px;
+                                flex-wrap:wrap;
+                            ">
+                                <a href="https://icomp.ufam.edu.br/" target="_blank" rel="noopener">
+                                    <img src="https://icomp.ufam.edu.br/images/icomp.png"
+                                        alt="IComp-UFAM"
+                                        style="height:60px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section>
+                {{ content }}
+            </section>
+
+            <footer>
+                {% if site.github.is_project_page %}
+                <p class="view">
+                    <a href="{{ site.github.owner_url }}">
+                        View My GitHub Profile
+                    </a>
+                </p>
+                <div style="margin-top:20px; display:flex; justify-content:left; align-items:center; gap: 5px;">
+                    <span>How about a espresso patronum? </span>
+                    <a href="https://ko-fi.com/manzoni" target="_blank" rel="noopener"
+                        style="display:inline-flex; align-items:center;">
+                        <img src="https://storage.ko-fi.com/cdn/brandasset/v2/kofi_symbol.png"
+                            alt="Support me on Ko-fi"
+                            style="height:32px;">
+                    </a>
+                </div>
+                {% endif %}
+
+                {% if site.github.is_user_page %}
+                <p class="view">
+                    <a href="{{ site.github.owner_url }}">
+                        View My GitHub Profile
+                    </a>
+                </p>
+                {% endif %}
+
+                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+            </footer>
+        </div>
+
+        <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+        <script src="{{ '/assets/js/nav.js' | relative_url }}"></script>
+    </body>
+</html>
+
+<!-- JS toggle: controls the nav visibility -->
+<script>document.documentElement.classList.add('js');</script>

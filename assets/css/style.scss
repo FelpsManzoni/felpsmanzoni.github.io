@@ -68,6 +68,36 @@ header {
 }
 .site-topbar { margin: auto; margin-right: 0; }
 
+/* ---------- Reading layout (blog/cv/projects) ---------- */
+body.reading-layout .wrapper {
+  width: 980px;
+}
+
+.reading-main {
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.reading-header {
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.reading-title {
+  margin: 0;
+}
+
+.reading-intro {
+  margin: 0.7rem 0 0;
+  color: #4b5563;
+  text-align: justify;
+}
+
+.reading-content {
+  max-width: 860px;
+}
+
 /* ------- Perfil Photo config --------- */
 // Verificar melhoria para apresentar a foto ao lado esquerdo da descrição
 // To-do: Adicionar para que a foto não seja esprimida de forma alguma
@@ -252,6 +282,11 @@ header {
     .top-bar-title {
         margin: 0;
         text-align: left;
+    }
+
+    body.reading-layout .wrapper {
+      width: auto;
+      padding: 6.5rem 1rem 1rem;
     }
 }
 
