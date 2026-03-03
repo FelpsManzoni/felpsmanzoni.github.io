@@ -4,6 +4,42 @@
 /* ---- Change this import to a local based archive so that I can modify the base theme layout ---*/
 @import "{{ site.theme }}";
 
+:root {
+  --bg: #ffffff;
+  --text: #24292f;
+  --muted: #4b5563;
+  --surface: #ffffff;
+  --surface-soft: #f8fafc;
+  --border: #e5e7eb;
+  --link: #0366d6;
+  --accent: #56a1f275;
+  --accent-hover: #90b8e4a3;
+  --shadow: rgba(0, 0, 0, 0.12);
+}
+
+html[data-theme="dark"] {
+  --bg: #0f141d;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --surface: #171e2b;
+  --surface-soft: #202938;
+  --border: #374151;
+  --link: #7cc5ff;
+  --accent: #29527a;
+  --accent-hover: #3c6d99;
+  --shadow: rgba(0, 0, 0, 0.45);
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--link);
+}
+
 section {
     margin-top: 25px;
 }
@@ -19,8 +55,8 @@ header {
   left: 0;
   right: 0;
   z-index: 1500;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
 }
 
 /* centers content to align with Minimal theme's wrapper */
@@ -41,7 +77,7 @@ header {
 
 /* Optional: subtle shadow so it feels like a bar */
 .top-bar-fixed {
-  box-shadow: 0 2px 4px rgba(0,0,0,.06);
+  box-shadow: 0 2px 4px var(--shadow);
 }
 
 .background-container {
@@ -79,7 +115,7 @@ body.reading-layout .wrapper {
 }
 
 .reading-header {
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--border);
   margin-bottom: 1.5rem;
   padding-bottom: 0.75rem;
 }
@@ -90,7 +126,7 @@ body.reading-layout .wrapper {
 
 .reading-intro {
   margin: 0.7rem 0 0;
-  color: #4b5563;
+  color: var(--muted);
   text-align: justify;
 }
 
@@ -147,8 +183,8 @@ body.reading-layout .wrapper {
   display: none; /* shown via media query */
   align-items: center; justify-content: center;
   width: 44px; height: 36px;
-  border: 1px solid #d0d7de; border-radius: 8px;
-  background: #fff; color: #0969da; cursor: pointer;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: var(--surface); color: var(--link); cursor: pointer;
 }
 
 .hamburger,
@@ -177,13 +213,46 @@ body.reading-layout .wrapper {
     text-decoration: none; 
     padding: .35rem .6rem; 
     border-radius: .5rem;
-    outline: 2px solid #F2F2F2;
+    outline: 2px solid var(--surface-soft);
 }
-.nav-link:hover { background: #f2f2f2; }
+.nav-link:hover { background: var(--surface-soft); }
 .nav-link.active { 
     font-weight: 700; 
-    outline: 2px solid #56a1f275; 
-    background: #56a1f275;
+    outline: 2px solid var(--accent); 
+    background: var(--accent);
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 2600;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px var(--shadow);
+  cursor: pointer;
+  padding: 0;
+}
+
+.theme-toggle:hover {
+  background: var(--surface-soft);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+.theme-toggle-icon {
+  font-size: 14px;
+  line-height: 1;
 }
 
 /* ---------- mobile overlay ---------- */
@@ -223,7 +292,7 @@ body.reading-layout .wrapper {
     .nav-list {
         display: grid;
         width: min(90vw, 480px);
-        background: #fff; color: #24292f;
+        background: var(--surface); color: var(--text);
         border-radius: 12px; padding: 8px 16px;
         box-shadow: 0 10px 30px rgba(0,0,0,.25);
 
@@ -232,15 +301,15 @@ body.reading-layout .wrapper {
     } 
     .js .nav.open .nav-list { transform: translateY(0) scale(1); }
 
-    .nav-link { display: block; padding: .9rem .25rem; color: #24292f; }
+    .nav-link { display: block; padding: .9rem .25rem; color: var(--text); }
 
     .nav-link.active {
         font-size: 18px;
         font-weight: bold;
-        background-color: #56a1f275; 
+        background-color: var(--accent); 
         box-shadow: 0 10px 30px rgba(0,0,0,.25); 
     }
-    .nav-link:hover { background: #90b8e4a3; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+    .nav-link:hover { background: var(--accent-hover); box-shadow: 0 10px 30px rgba(0,0,0,.25); }
     .nav-list li { 
         font-size: 16px;
         text-align: center; 
@@ -282,6 +351,11 @@ body.reading-layout .wrapper {
     .top-bar-title {
         margin: 0;
         text-align: left;
+    }
+
+    .theme-toggle {
+      top: 10px;
+      right: 10px;
     }
 
     body.reading-layout .wrapper {
