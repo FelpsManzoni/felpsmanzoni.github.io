@@ -18,13 +18,30 @@ page_intro: Ongoing research projects, selected publications, and work currently
             <h3>2026</h3>
             <h4 style="margin: 0; font-size: 15px">
                 <a href="https://felpsmanzoni.github.io/projects/research/se4ai_icse_2026" target="_blank">
+                    Structuring a Development Process for AI/ML Projects: a look into industry driven issues
+                </a>
+            </h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+              Felipe S. Manzoni, Camilla R. Gomes, Rayssa C. dos Reis, Ana Oran, Leonardo Marques
+            </h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+                International Conference on Enterprise Iformation Systems (ICEIS 2026) - Research Trach
+            </h4>
+            <h4 style="font-weight: normal; margin: 0 0 10px;">
+                Benidorm/Costa Blanca - Spain
+            </h4>
+            <h4 style="margin: 0; font-size: 15px">
+                <a href="https://felpsmanzoni.github.io/projects/research/se4ai_icse_2026" target="_blank">
                     SE4AI: Structured AI/ML Enabled Software Development Process
                 </a>
             </h4>
             <h4 style="margin: 0; font-weight: normal; font-style: italic;">
-                International Conference on Software Engineering (ICSE) 2026 - Doctoral Symposium Trach
+              Felipe S. Manzoni
             </h4>
-            <h4 style="font-weight: normal;">Rio de Janeiro/RJ - Brazil</h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+                International Conference on Software Engineering (ICSE 2026) - Doctoral Symposium Trach
+            </h4>
+            <h4 style="font-weight: normal; margin: 0;">Rio de Janeiro/RJ - Brazil</h4>
             <h3>2025</h3>
             <h4 style="margin: 0; font-size: 15px">
                 <a href="https://www.scitepress.org/PublicationsDetail.aspx?ID=WtV8O51a2vY=&t=1" target="_blank">
@@ -32,9 +49,12 @@ page_intro: Ongoing research projects, selected publications, and work currently
                 </a>
             </h4>
             <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+              Felipe S. Manzoni, Rávella Rodrigues, Ana Oran
+            </h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
                 International Conference on Enterprise Information Systems (ICEIS) 2025
             </h4>
-            <h4 style="font-weight: normal;">Porto - Portugal</h4>
+            <h4 style="font-weight: normal; margin: 0;">Porto - Portugal</h4>
             <h3>2021</h3>
             <h4 style="margin: 0; font-size: 15px">
                 <a href="https://tede.ufam.edu.br/bitstream/tede/8820/13/Dissertac%CC%A7a%CC%83o_FelipeManzoni_PPGI.pdf" target="_blank">
@@ -42,9 +62,12 @@ page_intro: Ongoing research projects, selected publications, and work currently
                 </a>
             </h4>
             <h4 style="margin: 0; font-weight: normal; font-style: italic;">
-                Master Thesis - PPGI/UFAM (TEDE-UFAM)
+              Felipe Sonntag Manzoni
             </h4>
-            <h4 style="font-weight: normal;">Mater Thesis - Online Archived</h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+                PPGI/UFAM (TEDE-UFAM)
+            </h4>
+            <h4 style="font-weight: normal; margin: 0;">Mater Thesis - Online Archived</h4>
             <h3>2020</h3>
             <h4 style="margin: 0; font-size: 15px">
                 <a href="https://repositorio.pucrs.br/dspace/bitstream/10923/19901/2/Straight_to_the_Point_Evaluating_What_Matters_for_You_A_Comparative_Study_on_Playability_Heuristic_Sets.pdf" target="_blank">
@@ -52,18 +75,26 @@ page_intro: Ongoing research projects, selected publications, and work currently
                 </a>
             </h4>
             <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+              Felipe S. Manzoni, Tayana Conte, Milene Silveira, Simone Barbosa
+            </h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
                 International Conference on Enterprise Information Systems (ICEIS) 2020
             </h4>
-            <h4 style="font-weight: normal;">Online Streaming (COVID Pandemic acts)</h4>
+            <h4 style="font-weight: normal; margin: 0 0 10px;">Online Streaming (COVID Pandemic acts)</h4>
             <h4 style="margin: 0; font-size: 15px">
                 <a href="https://scholar.archive.org/work/us5huw7qbba3dfbahpimjd4caa/access/wayback/https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/21804993/V6_TR_USES_2019_003.pdf" target="_blank">
                     Playability Heuristic Set Comparative Study: Support Material for CustomCheck4Play
                 </a>
             </h4>
             <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+              Felipe S. Manzoni
+            </h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
                 Online archive - additional material for publication
             </h4>
-            <h4 style="font-weight: normal;">Online Archive</h4>
+            <h4 style="font-weight: normal; margin: 0;">
+              Online Archive
+            </h4>
             <h3>2018</h3>
             <h4 style="margin: 0; font-size: 15px">
                 <a href="https://www.scitepress.org/PublicationsDetail.aspx?ID=WtV8O51a2vY=&t=1" target="_blank">
@@ -71,9 +102,12 @@ page_intro: Ongoing research projects, selected publications, and work currently
                 </a>
             </h4>
             <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+              Felipe S. Manzoni, Bruna Ferreira, Tayana Conte
+            </h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
                 International Conference on Enterprise Information Systems (ICEIS) 2018
             </h4>
-            <h4 style="font-weight: normal;">Funchal, Madeira - Portugal</h4>
+            <h4 style="font-weight: normal; margin: 0;">Funchal, Madeira - Portugal</h4>
         </p>
     </div>
 </div>
@@ -182,41 +216,7 @@ page_intro: Ongoing research projects, selected publications, and work currently
 </ul>
 
 ---
-<!-- 
-## Selected Publications
 
-### Conference Papers
-
-<ul class="bullets">
-  <li class="starred">
-    Felipe S. Manzoni, Tayana Uchôa Conte, Milene Silveira, Simone Barbosa. <br />
-    <a href="http://dx.doi.org/10.5220/0013398700003929">
-      <strong>
-        Straight to the Point - Evaluating What Matters for You: A Comparative Study on Playability Heuristic Sets.
-      </strong>
-    </a>
-    <em>Proceedings of the 22nd International Conference on Enterprise Information Systems. 2020, Prague/Czech Republic, v. 2. p. 499-510.</em>
-  </li>
-  <li class="starred">
-    Felipe S. Manzoni, Bruna Moraes Ferreira, Tayana Uchôa Conte. <br />
-    <a href="http://dx.doi.org/10.5220/0006695604510462">
-      <strong>
-        NExPlay - Playability Assessment for Non-experts Evaluators.
-      </strong>
-    </a>
-    <em>Proceedings of the 20th International Conference on Enterprise Information Systems, 2018, Funchal/Portugal, v. 2. p. 451-462.</em>
-  </li>
-  <li>
-    Felipe S. Manzoni, Rávella Rodrigues, Ana Carolina Oran Rocha. <br />
-    <a href="http://dx.doi.org/10.5220/0013398700003929">
-      <strong>
-        Exploring the Use of ChatGPT for the Generation of User Story Based Test Cases: An Experimental Study.
-      </strong>
-    </a>
-    <em>Proceedings of the 27th International Conference on Enterprise Information Systems, 2025, Porto/Portugual, v. 2. p. 292-299.</em>
-  </li>
-</ul>
- -->
 ### Under Development
 
 <ul>
@@ -230,44 +230,3 @@ page_intro: Ongoing research projects, selected publications, and work currently
   </li>
 </ul>
 
----
-
-<!--
-## Support
-
-I gratefully acknowledge the financial and institutional support provided by the following organizations:
-
-- [**CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico)**](http://www.cnpq.br)
-   CNPq plays a crucial role in promoting scientific and technological development in Brazil by funding research projects, scholarships, and fostering innovation. I am honored to be recognized as a Level 1B researcher by CNPq.
-- [**CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior)**](https://www.gov.br/capes/pt-br)
-   CAPES is dedicated to improving the quality of higher education in Brazil through scholarships, grants, and support for postgraduate programs. It has also provided scholarships for several students involved in my projects.
-- [**FAPEAM (Fundação de Amparo à Pesquisa do Estado do Amazonas)**](https://www.fapeam.am.gov.br/)
-   FAPEAM provides financial support for scientific research and innovation within the State of Amazonas, fostering regional development. It has supported many projects throughout the years and also provided scholarships for several students involved in my projects.
-- [**Jusbrasil**](https://www.jusbrasil.com.br)
-   Jusbrasil is a leading Brazilian legal technology company. Jusbrasil has supported a specific project under my coordination and research grants to several of my students and postdocs.
-
----
--->
-<!-- 
-## Certifications and Other refs
-
-I am currently:
-
-<ul>
-  <li>
-    An accredited <a href="https://softex.br/mpsbr/profissionais-habilitados/">
-      <strong>MPS.Br Software Implementer</strong>
-    </a>
-  </li>
-  <li>
-    Certified on <a href="https://bcr.bstqb.org.br/cert?field_certificado_numero_value=+&field_certificado_nome_value=Felipe+Sonntag+Manzoni">
-      <strong>CTFL Foundation level</strong>
-    </a>
-  </li>
-  <li>
-    Certified on <a href="https://media.licdn.com/dms/image/v2/D4D2DAQGXBBY_FFw7vw/profile-treasury-image-shrink_1280_1280/profile-treasury-image-shrink_1280_1280/0/1722383734555?e=1756260000&v=beta&t=8lCfd3eXDoC0BfNuoOK14bsRcOo7JfKloh5PCGcV9xI">
-      <strong>ARMv8-A TrustZone Technical Training Course</strong>
-    </a>
-  </li>
-</ul>
- -->
