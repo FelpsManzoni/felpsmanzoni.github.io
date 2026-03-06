@@ -53,26 +53,61 @@
             <header>
                 <div class="logo-holder">
                 {% if site.logo %}
-                <img src="{{site.logo | relative_url}}" alt="Profile Photo" class="profile-photo" />
+                  <img src="{{site.logo | relative_url}}" alt="Profile Photo" class="profile-photo" />
                 {% endif %}
-                <div class="profile-photo-holder">
-                    <p class="description-holder">
-                    {{ site.description | default: site.github.project_tagline }}
-                    </p>
-                </div>
-                </div>
+                    <div class="card">
+                        <h2>Contact</h2>
+                        <p>
+                            <strong>Felipe Sonntag Manzoni</strong><br/>
+                            Want to colaborate or discuss about any research topic? Shoot me an email!<br/>
+                            Federal University of Amazonas (UFAM) - PPGI/IComp — Manaus, Brazil<br/>
+                            Email: <a href="mailto:fsm2@icomp.ufam.edu.br">fsm2@icomp.ufam.edu.br</a>
+                        </p>
+                        <div style="
+                        margin-top:28px;
+                        padding-top:18px;
+                        border-top:1px solid #23283a;
+                        text-align:center;
+                        ">
+                            <p style="margin-bottom:14px; font-weight:500;">
+                                Affiliations
+                            </p>
 
-                {% if site.github.is_project_page %}
-                <p class="view">
-                <a href="{{ site.github.repository_url }}">
-                    View the Project on GitHub <small>{{ site.github.repository_nwo }}</small>
-                </a>
-                </p>
-                {% endif %}
-
-                {% if site.github.is_user_page %}
-                <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-                {% endif %}
+                            <div style="
+                                display:flex;
+                                justify-content:center;
+                                align-items:center;
+                                gap:50px;
+                                flex-wrap:wrap;
+                            ">
+                                <a href="https://ufam.edu.br" target="_blank" rel="noopener">
+                                    <img src="https://edoc.ufam.edu.br/bitstream/123456789/4819/7/marca_ufam_vetor_positivo.png"
+                                        alt="UFAM"
+                                        style="height:65px;">
+                                </a>
+                                <a href="https://icomp.ufam.edu.br/" target="_blank" rel="noopener">
+                                    <img src="/assets/images/sphere_logo_nobg.png"
+                                        alt="SPHERE Research Group - PPGI-IComp"
+                                        style="height:65px;">
+                                </a>
+                            </div>
+                            <div style="
+                                display:flex;
+                                justify-content:center;
+                                align-items:center;
+                                padding-top: 10px;
+                                gap:50px;
+                                flex-wrap:wrap;
+                            ">
+                                <a href="https://icomp.ufam.edu.br/" target="_blank" rel="noopener">
+                                    <img src="https://icomp.ufam.edu.br/images/icomp.png"
+                                        alt="IComp-UFAM"
+                                        style="height:60px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </header>
 
             <section>

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Industry Driven Issues (ICEIS 2026) — References & Resources</title>
+  <style>
+    :root{--bg:#0b0c10;--card:#11131a;--text:#e8eaf0;--muted:#b2b7c6;--link:#7aa2ff;--border:#23283a;}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:var(--bg);color:var(--text);}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px;}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;}
+    h1{font-size:1.35rem;margin:0 0 8px;}
+    h2{font-size:1.05rem;margin:18px 0 10px;}
+    p,li{color:var(--muted);line-height:1.45;}
+    a{color:var(--link);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .meta{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:8px;}
+    .pill{font-size:.86rem;padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;}
+    @media (min-width: 880px){.grid{grid-template-columns:1.25fr .75fr;}}
+    .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;}
+    .btn{display:inline-block;padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:#0f1220;}
+    .refs ol{padding-left:18px;}
+    pre{white-space:pre-wrap;margin:0;background:#0f1220;border:1px solid var(--border);border-radius:12px;padding:12px;color:var(--text);}
+    code{background:#0f1220;border:1px solid var(--border);padding:2px 6px;border-radius:8px;}
+    footer{margin-top:16px;color:var(--muted);font-size:.9rem;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="grid">
+
+      <div class="card">
+        <h1>Structuring a Development Process for AI/ML Projects: a look into industry driven issues</h1>
+        <p>
+            <strong>Authors:</strong> Felipe Sonntag Manzoni, Camilla R. Gomes, Rayssa C. dos Reis, Ana Oran, Leonardo Marques
+        </p>
+
+        <p><strong>Venue:</strong> ICEIS’26 (Research Track), Benidorm, Spain</p>
+
+        <div class="meta">
+          <span class="pill">Companion page</span>
+          <span class="pill">Full paper</span>
+          <span class="pill">Last updated: <span id="last"></span></span>
+        </div>
+
+        <h2>TL;DR (1-minute)</h2>
+
+        <div style="
+          margin-top:20px;
+          padding:10px;
+          border:1px solid #23283a;
+          border-radius:10px;
+          text-align:center;
+          background:#0f1220;
+        ">
+          <p style="margin-bottom:10px; font-weight:500;">
+            🎧 2-Minute Audio Summary
+          </p>
+
+          <audio controls style="width:100%; max-width:520px;">
+            <source src="../assets/iceis-2min.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p style="margin-top:10px; font-size:0.9rem; opacity:0.85;">
+            Prefer reading? The TL;DR bellow is designed to be read in about 2~3 minute.
+          </p>
+        </div>
+
+        <h2>Abstract</h2>
+        <p style="text-align: justify;">
+            AI and ML projects differ in several aspects from traditional software development, so the traditional and
+            agile development process cannot overcome the number of difficulties and aspects of these types of software
+            development. In many cases, the AI and ML development cycles, even though representing just a fraction of
+            the system, are made using non-standardized and inadequate development processes that cannot guarantee the
+            developed product’s quality and effectiveness. This paper intends to elucidate and shed light on this issue,
+            showcasing a novel development lifecycle process for AI/ML contexts that accounts for the quality activities
+            and results to improve the project results. This research is developed in collaboration with the industry and
+            is the first contribution on the developed process grounded on empirical information and validated on an
+            empirical quality process. We present the first version of the development lifecycle process for AI/ML enabled
+            systems and also present a initial evaluation of the developed artifact from the view of industry specialists,
+            presenting the elicitation of further research and development for the next iteration.
+        </p>
+
+        <h2>2-Minute paper resume</h2>
+
+        <p style="text-align: justify;"><strong>Context:</strong> 
+        The growing adoption of Artificial Intelligence and Machine Learning inside modern software systems
+        has introduced new development challenges that traditional software engineering processes were not
+        designed to handle. AI/ML systems depend heavily on data availability, dataset quality, and iterative
+        experimentation. In practice, many organizations still rely on traditional or agile software processes
+        that treat model development as an isolated activity, often postponing evaluation and quality assurance
+        until the end of the project lifecycle.</p>
+
+        <p style="text-align: justify;"><strong>Problem:</strong> 
+        This separation between model experimentation and software engineering practices frequently leads to
+        critical issues such as poor dataset governance, unclear relationships between requirements and data,
+        weak model evaluation strategies, and late discovery of quality problems. These challenges increase the
+        risk of rework, reduce system reliability, and make it harder for teams to deliver AI-enabled systems
+        that meet production standards.</p>
+
+        <p style="text-align: justify;"><strong>Approach:</strong> 
+        This work proposes a structured development lifecycle tailored for AI/ML-enabled systems that explicitly
+        incorporates quality assurance activities throughout the development pipeline. The process was designed
+        using empirical insights gathered from industry projects and qualitative interviews with experienced
+        AI/ML specialists. The collected knowledge was analyzed through a structured qualitative analysis process,
+        allowing the identification of recurring issues and development bottlenecks observed in real projects.</p>
+
+        <p style="text-align: justify;"><strong>Key Contributions:</strong></p>
+        <ul style="text-align: justify;">
+        <li>Definition of a structured development lifecycle that integrates AI/ML activities with software engineering practices.</li>
+        <li>Explicit inclusion of <strong>QA roles and checkpoints</strong> during dataset preparation, model training, evaluation, and selection.</li>
+        <li>Introduction of dataset governance and independent evaluation stages to reduce bias and improve model reliability.</li>
+        <li>Guidance on appropriate evaluation metrics such as Accuracy, Precision, Recall, F1-Score, AUC-ROC, MAE, MSE, and RMSE depending on the problem domain.</li>
+        </ul>
+
+        <p style="text-align: justify;"><strong>Initial Evaluation:</strong> 
+        The proposed lifecycle was reviewed by industry specialists who originally contributed to the interview
+        study. Their feedback confirmed the relevance of early QA involvement, dataset quality validation, and
+        independent model evaluation. Specialists highlighted that these steps could significantly reduce common
+        issues observed in AI/ML projects, such as incorrect dataset partitioning, weak metric selection, and
+        misalignment between requirements and available data.</p>
+
+        <p style="text-align: justify;"><strong>Impact and Future Work:</strong> 
+        The results indicate that integrating structured quality checkpoints into the AI/ML lifecycle can help
+        teams detect issues earlier, improve collaboration between development and QA teams, and increase the
+        reliability of AI-enabled software systems. Future work will involve applying the proposed process to
+        real-world projects across multiple organizations to further validate and refine the framework.</p>
+
+        <h2>Resources</h2>
+        <div class="btns">
+          <!-- Fill these with your real links -->
+          <a class="btn" href="../assets/ICSE_2026_Doctoral_Symposium.pdf" target="_blank" rel="noopener">📄 Paper (PDF)</a>
+          <a class="btn" href="../assets/Poster_ICSE_Doctoral_2026_Manzoni.pdf" target="_blank" rel="noopener">🖼️ Poster (PDF)</a>
+          <a class="btn" href="YOUR_LINK_TO_SLIDES_OR_APPENDIX" target="_blank" rel="noopener">📎 Appendix</a>
+        </div>
+
+        <h2>Full References</h2>
+        <div class="refs">
+          <ol>
+            <li>Cruzes, D. S. and Dybå, T. (2017). <em>A content analysis process for qualitative software engineering research</em>. Innovations in Systems and Software Engineering, 13(2–3):129–141.</li>
+            <li>Gezici, B. and Tarhan, A. K. (2022). <em>Systematic literature review on software quality for ai-based software</em>. Empirical Software Engineering, 27(3):66.</li>
+            <li>Giray, G. (2021). <em>A software engineering perspective on engineering machine learning systems: State of the art and challenges</em>. Journal of Systems and Software, 180:111031.</li>
+            <li>Goodfellow, I., Bengio, Y., and Courville, A. (2016). <em>Deep Learning</em>. MIT Press, United Kingdom.</li>
+            <li>Lorenzoni, G., Alencar, P., Nascimento, N., and Cowan, D. (2021). <em>Machine learning model development from a software engineering perspective: A systematic literature review</em>. arXiv preprint.</li>
+            <li>Lwakatare, L. E., Raj, A., Crnkovic, I., Bosch, J., and Olsson, H. H. (2020). <em>Large-scale machine learning systems in real-world industrial settings: A review of challenges and solutions</em>. Information and Software Technology, 127:106368–106385.</li>
+            <li>Martínez-Fernández, S., Bogner, J., Franch, X., Oriol, M., Siebert, J., Trendowicz, A., Vollmer, A. M., and Wagner, S. (2022). <em>Software engineering for ai-based systems: A survey</em>. ACM TOSEM, 31(2).</li>
+            <li>Nascimento, E., Nguyen-Duc, A., Sundbø, I., and Conte, T. (2020). <em>Software engineering for artificial intelligence and machine learning software: A systematic literature review</em>. arXiv preprint.</li>
+            <li>Ozkaya, I. (2020). <em>What is really different in engineering ai-enabled systems?</em> IEEE Software, 37(4):3–6.</li>
+            <li>Polkowski, Z., Vora, J., Tanwar, S., Tyagi, S., Singh, P. K., and Singh, Y. (2019). <em>Machine learning-based software effort estimation: An analysis</em>. In 2019 11th International Conference on Electronics, Computers and Artificial Intelligence (ECAI), pages 1–6. IEEE.</li>
+            <li>Serban, A., Blom, K. V. D., Hoos, H., and Visser, J. (2020). <em>Adoption and effects of software engineering best practices in machine learning</em>. ESEM, Article 3, 1–12. IEEE Computer Society.</li>
+            <li>Wohlin, C., Runeson, P., Höst, M., Ohlsson, M. C., Regnell, B., and Wesslén, A. (2024). <em>Experimentation in Software Engineering</em>. Springer Berlin Heidelberg, Germany.</li>
+          </ol>
+        </div>
+
+        <h2>Cite this work (BibTeX)</h2>
+        <pre>
+@inproceedings{manzoni2026_industry_ai_ml_process,
+  title     = {Structuring a Development Process for AI/ML Projects: a look into industry driven issues},
+  author    = {Felipe Sonntag Manzoni and others},
+  booktitle = {Proceedings of ICEIS 2026},
+  year      = {2026},
+  note      = {To appear / venue details to be confirmed}
+}
+        </pre>
+
+        <div style="margin-top:20px; display:flex; justify-content:center; align-items:center; gap:10px; font-size:1.05rem;">
+          <span>How about a espresso patronum? </span>
+          <a href="https://ko-fi.com/manzoni" target="_blank" rel="noopener"
+            style="display:inline-flex; align-items:center;">
+            <img src="https://storage.ko-fi.com/cdn/brandasset/v2/kofi_symbol.png"
+                alt="Support me on Ko-fi"
+                style="height:32px;">
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h1>Did this research got your attention? <br/>Let's keep in contact!</h1>
+        <p>
+          <strong style="font-size: large;">Felipe Sonntag Manzoni</strong><br/>
+          <p style="margin-top: 10px;"></p><em>Federal University of Amazonas (UFAM) — Manaus, Brazil</em><br/>
+          <em>SiDi Innovation & Intelligence Center — AI R&amp;D department<br/></em></p>
+          Email: <a href="mailto:fsm2@icomp.ufam.edu.br">fsm2@icomp.ufam.edu.br</a></br>
+          Phone/WhatsApp: <a href="tel:+5592994944363">+55 92 99494-4363</a>
+        </p>
+        <div style="
+          margin-top:28px;
+          padding-top:18px;
+          border-top:1px solid #23283a;
+          text-align:center;
+        ">
+          <p style="margin-bottom:14px; font-weight:500;">Affiliations/Supporters</p>
+
+          <div style="
+              display:flex;
+              justify-content:center;
+              align-items:center;
+              gap:50px;
+              flex-wrap:wrap;
+          ">
+            <a href="https://ufam.edu.br" target="_blank" rel="noopener">
+                <img src="https://edoc.ufam.edu.br/bitstream/123456789/4819/7/marca_ufam_vetor_positivo.png"
+                  alt="UFAM"
+                  style="height:75px;">
+            </a>
+
+            <a href="https://www.sidi.org.br" target="_blank" rel="noopener">
+                <img src="https://ebdicorp.com.br/wp-content/uploads/2026/01/SIDI-768x320.png"
+                  alt="SiDi"
+                  style="height:65px;">
+            </a>
+
+            <a href="https://icomp.ufam.edu.br/" target="_blank" rel="noopener">
+                <img src="/assets/images/sphere_logo_nobg.png"
+                    alt="SPHERE Research Group - PPGI-IComp"
+                    style="height:85px;">
+            </a>
+
+            <a href="https://icomp.ufam.edu.br/" target="_blank" rel="noopener">
+                <img src="https://icomp.ufam.edu.br/images/icomp.png"
+                    alt="IComp-UFAM"
+                    style="height:60px;">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      Companion page for the ICEIS’26 Research track paper.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("last").textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
