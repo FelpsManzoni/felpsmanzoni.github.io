@@ -10,7 +10,6 @@ page_intro: Academic background, professional experience, publications, and tech
 
 ---
 
-<!--Verificar porque essa parte não está aplicando as linhas do HTML como deveria e interpretando elas como sendo MarkDown-->
 <div>
     <div class="background-container">
         <h3>
@@ -153,29 +152,29 @@ page_intro: Academic background, professional experience, publications, and tech
 <ul class="bullets">
   <li class="starred">
     Felipe S. Manzoni, Tayana Uchôa Conte, Milene Silveira, Simone Barbosa. <br />
-    <a href="http://dx.doi.org/10.5220/0013398700003929">
-      <strong>
+    <strong>
+      <a href="http://dx.doi.org/10.5220/0013398700003929">
         Straight to the Point - Evaluating What Matters for You: A Comparative Study on Playability Heuristic Sets.
-      </strong>
-    </a>
+      </a>
+    </strong>
     <em>Proceedings of the 22nd International Conference on Enterprise Information Systems. 2020, Prague/Czech Republic, v. 2. p. 499-510.</em>
   </li>
   <li class="starred">
     Felipe S. Manzoni, Bruna Moraes Ferreira, Tayana Uchôa Conte. <br />
-    <a href="http://dx.doi.org/10.5220/0006695604510462">
-      <strong>
+    <strong>
+      <a href="http://dx.doi.org/10.5220/0006695604510462">
         NExPlay - Playability Assessment for Non-experts Evaluators.
-      </strong>
-    </a>
+      </a>
+    </strong>
     <em>Proceedings of the 20th International Conference on Enterprise Information Systems, 2018, Funchal/Portugal, v. 2. p. 451-462.</em>
   </li>
   <li>
     Felipe S. Manzoni, Rávella Rodrigues, Ana Carolina Oran Rocha. <br />
-    <a href="http://dx.doi.org/10.5220/0013398700003929">
-      <strong>
+    <strong>
+      <a href="http://dx.doi.org/10.5220/0013398700003929">
         Exploring the Use of ChatGPT for the Generation of User Story Based Test Cases: An Experimental Study.
-      </strong>
-    </a>
+      </a>
+    </strong>
     <em>Proceedings of the 27th International Conference on Enterprise Information Systems, 2025, Porto/Portugual, v. 2. p. 292-299.</em>
   </li>
 </ul>
@@ -195,41 +194,23 @@ page_intro: Academic background, professional experience, publications, and tech
 
 ---
 
-<!--
-## Support
-
-I gratefully acknowledge the financial and institutional support provided by the following organizations:
-
-- [**CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico)**](http://www.cnpq.br)
-   CNPq plays a crucial role in promoting scientific and technological development in Brazil by funding research projects, scholarships, and fostering innovation. I am honored to be recognized as a Level 1B researcher by CNPq.
-- [**CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior)**](https://www.gov.br/capes/pt-br)
-   CAPES is dedicated to improving the quality of higher education in Brazil through scholarships, grants, and support for postgraduate programs. It has also provided scholarships for several students involved in my projects.
-- [**FAPEAM (Fundação de Amparo à Pesquisa do Estado do Amazonas)**](https://www.fapeam.am.gov.br/)
-   FAPEAM provides financial support for scientific research and innovation within the State of Amazonas, fostering regional development. It has supported many projects throughout the years and also provided scholarships for several students involved in my projects.
-- [**Jusbrasil**](https://www.jusbrasil.com.br)
-   Jusbrasil is a leading Brazilian legal technology company. Jusbrasil has supported a specific project under my coordination and research grants to several of my students and postdocs.
-
----
--->
-
 ## Certifications and Other refs
 
 I am currently:
 
 <ul>
   <li>
-    An accredited <a href="https://softex.br/mpsbr/profissionais-habilitados/">
-      <strong>MPS.Br Software Implementer</strong>
-    </a>
+    An accredited <strong><a href="https://softex.br/mpsbr/profissionais-habilitados/">MPS.Br Software Implementer</a></strong>
   </li>
   <li>
-    Certified on <a href="https://bcr.bstqb.org.br/cert?field_certificado_numero_value=+&field_certificado_nome_value=Felipe+Sonntag+Manzoni">
-      <strong>CTFL Foundation level</strong>
-    </a>
+    Certified on <strong><a href="https://bcr.bstqb.org.br/cert?field_certificado_numero_value=+&field_certificado_nome_value=Felipe+Sonntag+Manzoni">
+    CTFL Foundation level</a></strong>
+  </li>
+    <li>
+    Certified on <strong><a href="https://bcr.bstqb.org.br/cert?field_certificado_numero_value=+&field_certificado_nome_value=Felipe+Sonntag+Manzoni">
+    CT-AI Testing</a></strong>
   </li>
   <li>
-    Certified on <a href="https://media.licdn.com/dms/image/v2/D4D2DAQGXBBY_FFw7vw/profile-treasury-image-shrink_1280_1280/profile-treasury-image-shrink_1280_1280/0/1722383734555?e=1756260000&v=beta&t=8lCfd3eXDoC0BfNuoOK14bsRcOo7JfKloh5PCGcV9xI">
-      <strong>ARMv8-A TrustZone Technical Training Course</strong>
-    </a>
+    Certified on <strong><a href="https://media.licdn.com/dms/image/v2/D4D2DAQGXBBY_FFw7vw/profile-treasury-image-shrink_1280_1280/profile-treasury-image-shrink_1280_1280/0/1722383734555?e=1756260000&v=beta&t=8lCfd3eXDoC0BfNuoOK14bsRcOo7JfKloh5PCGcV9xI"> ARMv8-A TrustZone Technical Training Course</a></strong>
   </li>
 </ul>
