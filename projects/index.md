@@ -42,7 +42,7 @@ page_intro: Ongoing research projects, selected publications, and work currently
                 International Conference on Software Engineering (ICSE 2026) - Doctoral Symposium Trach
             </h4>
             <h4 style="font-weight: normal; margin: 0;">Rio de Janeiro/RJ - Brazil</h4>
-            <h3>2025</h3>
+            <h3 style="margin: 20px 0 20px">2025</h3>
             <h4 style="margin: 0; font-size: 15px">
                 <a href="https://www.scitepress.org/PublicationsDetail.aspx?ID=WtV8O51a2vY=&t=1" target="_blank">
                     Exploring the Use of ChatGPT for the Generation of User Story Based Test Cases: An Experimental Study
@@ -55,7 +55,7 @@ page_intro: Ongoing research projects, selected publications, and work currently
                 International Conference on Enterprise Information Systems (ICEIS) 2025
             </h4>
             <h4 style="font-weight: normal; margin: 0;">Porto - Portugal</h4>
-            <h3>2021</h3>
+            <h3 style="margin: 20px 0 20px">2021</h3>
             <h4 style="margin: 0; font-size: 15px">
                 <a href="https://tede.ufam.edu.br/bitstream/tede/8820/13/Dissertac%CC%A7a%CC%83o_FelipeManzoni_PPGI.pdf" target="_blank">
                     Digital Games Playability Assessment Through Customizable Heuristic Sets With Non-Expert Evaluators
@@ -68,7 +68,7 @@ page_intro: Ongoing research projects, selected publications, and work currently
                 PPGI/UFAM (TEDE-UFAM)
             </h4>
             <h4 style="font-weight: normal; margin: 0;">Mater Thesis - Online Archived</h4>
-            <h3>2020</h3>
+            <h3 style="margin: 20px 0 20px">2020</h3>
             <h4 style="margin: 0; font-size: 15px">
                 <a href="https://repositorio.pucrs.br/dspace/bitstream/10923/19901/2/Straight_to_the_Point_Evaluating_What_Matters_for_You_A_Comparative_Study_on_Playability_Heuristic_Sets.pdf" target="_blank">
                     Straight to the Point - Evaluating What Matters for You: A Comparative Study on Playability Heuristic Sets
@@ -95,7 +95,7 @@ page_intro: Ongoing research projects, selected publications, and work currently
             <h4 style="font-weight: normal; margin: 0;">
               Online Archive
             </h4>
-            <h3>2018</h3>
+            <h3 style="margin: 20px 0 20px">2018</h3>
             <h4 style="margin: 0; font-size: 15px">
                 <a href="https://www.scitepress.org/PublicationsDetail.aspx?ID=WtV8O51a2vY=&t=1" target="_blank">
                     NExPlay - Playability Assessment for Non-experts Evaluators
@@ -221,12 +221,13 @@ page_intro: Ongoing research projects, selected publications, and work currently
 
 <ul>
   <li>
-    Felipe S. Manzoni, Ana Carolina Oran, Leonardo Carneiro Marques. <br />
+    Felipe S. Manzoni, Ana Carolina Oran, Leonardo C. Marques. <br />
     <strong>Let's Talk About Quality: a decade of gathered AI/ML project development knowledge.</strong>
   </li>
   <li>
-    Felipe S. Manzoni, Camilla Rosas Gomes, Rayssa Campos dos Reis, Ana Carolina Oran, Leonardo Carneiro Marques. <br />
-    <strong>Structuring a Development Process for AI/ML Projects: a look into industry driven issues.</strong>
+    Camilla R. Gomes, Marcos Santos, Felipe S. Manzoni, Leonardo C. Marques, Oswald Mesumbe. <br />
+    <strong>Applying Usability Testing to Conversational Systems in an
+Internet of Things Context: An Industry Experience Report</strong>
   </li>
 </ul>
 
