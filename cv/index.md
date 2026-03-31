@@ -28,7 +28,8 @@ page_intro: Academic background, professional experience, publications, and tech
         </h3>
         <div class="logos">
             <a href="http://ufam.edu.br" target="_blank"> 
-                <img src="https://ppge.ufam.edu.br/images/ufam.png" height="55" alt="UFAM Website">
+                <img class="theme-image theme-image-light" src="https://edoc.ufam.edu.br/bitstream/123456789/4819/7/marca_ufam_vetor_positivo.png" height="55" alt="UFAM Website">
+                <img class="theme-image theme-image-dark" src="https://edoc.ufam.edu.br/bitstream/123456789/4819/5/marca_ufam_vetor_negativo.png" height="55" alt="UFAM Website">
             </a>
             <a href="http://icomp.ufam.edu.br" target="_blank"> 
                 <img src="https://icomp.ufam.edu.br/images/icomp.png" height="55" alt="IComp Website">
@@ -87,7 +88,8 @@ page_intro: Academic background, professional experience, publications, and tech
   </h3>
   <div class="logos">
     <a href="http://ufam.edu.br" target="_blank"> 
-      <img src="https://ppge.ufam.edu.br/images/ufam.png" height="55" alt="UFAM Website">
+        <img class="theme-image theme-image-light" src="https://edoc.ufam.edu.br/bitstream/123456789/4819/7/marca_ufam_vetor_positivo.png" height="55" alt="UFAM Website">
+        <img class="theme-image theme-image-dark" src="https://edoc.ufam.edu.br/bitstream/123456789/4819/5/marca_ufam_vetor_negativo.png" height="55" alt="UFAM Website">
     </a>
     <a href="http://icomp.ufam.edu.br" target="_blank"> 
       <img src="https://icomp.ufam.edu.br/images/icomp.png" height="55" alt="IComp Website">
