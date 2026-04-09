@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Informed Consent Form (ICF)</title>
+  <style>
+    :root{
+      --bg:#09131a;
+      --panel:#10212b;
+      --panel-alt:#0c1a22;
+      --text:#eef4f7;
+      --muted:#b7c7cf;
+      --line:#28404c;
+      --accent:#7ed9b5;
+      --accent-strong:#52c89b;
+      --warn:#ffd38a;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Georgia,"Times New Roman",serif;
+      background:
+        radial-gradient(circle at top left, rgba(126,217,181,.10), transparent 30%),
+        linear-gradient(180deg, #081117 0%, #09131a 100%);
+      color:var(--text);
+    }
+    .wrap{
+      max-width:1080px;
+      margin:0 auto;
+      padding:28px 18px 56px;
+    }
+    .hero{
+      display:grid;
+      gap:18px;
+      margin-bottom:18px;
+      padding:24px;
+      border:1px solid var(--line);
+      border-radius:22px;
+      background:
+        linear-gradient(140deg, rgba(126,217,181,.14), rgba(82,200,155,.03)),
+        var(--panel);
+      box-shadow:0 20px 44px rgba(0,0,0,.22);
+    }
+    .kicker{
+      display:inline-flex;
+      width:max-content;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      color:#d8fff2;
+      background:rgba(255,255,255,.04);
+      font:600 .8rem/1.2 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      letter-spacing:.03em;
+      text-transform:uppercase;
+    }
+    h1,h2,h3{
+      margin:0 0 10px;
+      font-family:"Segoe UI",system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+      line-height:1.15;
+    }
+    h1{font-size:clamp(1.9rem,4vw,3rem)}
+    h2{font-size:1.2rem;margin-top:24px}
+    h3{font-size:1rem;margin-top:0}
+    p,li{
+      color:var(--muted);
+      line-height:1.7;
+      font-size:1rem;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .hero p{
+      max-width:68ch;
+      margin:0;
+      font-size:1.03rem;
+    }
+    .actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:6px;
+    }
+    .action{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:46px;
+      padding:12px 16px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:var(--accent);
+      color:#092118;
+      font:700 .96rem/1.1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      text-decoration:none;
+    }
+    .action:hover{
+      background:var(--accent-strong);
+      text-decoration:none;
+    }
+    .action.secondary{
+      background:transparent;
+      color:var(--text);
+    }
+    .layout{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+    .card{
+      padding:20px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:var(--panel-alt);
+    }
+    .meta{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:12px;
+      margin-top:8px;
+    }
+    .meta-box{
+      padding:14px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:rgba(255,255,255,.02);
+    }
+    .meta-box strong,
+    .note strong{
+      display:block;
+      margin-bottom:6px;
+      color:var(--text);
+      font-family:"Segoe UI",system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+    }
+    .toc{
+      margin:0;
+      padding-left:18px;
+    }
+    .toc li{margin:4px 0}
+    .note{
+      margin-top:18px;
+      padding:14px 16px;
+      border:1px solid rgba(255,211,138,.35);
+      border-radius:14px;
+      background:rgba(255,211,138,.07);
+    }
+    .section{
+      padding-top:6px;
+      border-top:1px solid rgba(255,255,255,.06);
+    }
+    .section:first-of-type{
+      padding-top:0;
+      border-top:0;
+    }
+    .signature{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:14px;
+      margin-top:20px;
+    }
+    .signature-box{
+      min-height:92px;
+      padding:14px;
+      border:1px dashed #456371;
+      border-radius:14px;
+      background:rgba(255,255,255,.02);
+    }
+    .small{
+      font-size:.92rem;
+      color:#9eb2bc;
+    }
+    footer{
+      margin-top:18px;
+      color:#93a7b1;
+      font:400 .92rem/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+    @media (min-width: 920px){
+      .layout{
+        grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);
+        align-items:start;
+      }
+      .signature{
+        grid-template-columns:1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero" aria-labelledby="icf-title">
+      <div class="kicker">Research Ethics</div>
+      <div>
+        <h1 id="icf-title">Informed Consent Form (ICF)</h1>
+        <p>
+          This page presents the informed consent form for the SE4AI survey on Software Engineering
+          and Testing practices in AI/ML development. Please read the information carefully before
+          deciding whether to participate.
+        </p>
+      </div>
+      <div class="actions">
+        <a class="action" href="../assets/Survey_ICF.pdf" download>Download ICF (PDF)</a>
+        <a class="action secondary" href="mailto:fsm2@icomp.ufam.edu.br">Request Clarification</a>
+      </div>
+    </section>
+
+    <div class="layout">
+      <main class="card">
+        <h2>Full ICF Content</h2>
+        <p>
+          Federal University of Amazonas (UFAM), Computing Institute (IComp), and the SPHERE
+          Research Group provide this consent form for the research study described below.
+        </p>
+
+        <section class="section" id="study-identification">
+          <h2>1. Study Identification</h2>
+          <p><strong>Study title:</strong> SE4AI: Adoption of Software Engineering Practices in AI/ML Development</p>
+          <p><strong>Principal researcher:</strong> Felipe Sonntag Manzoni</p>
+          <p><strong>Institution:</strong> Federal University of Amazonas (UFAM) / Institute of Computing (IComp)</p>
+          <p><strong>Research group:</strong> SPHERE Research Group</p>
+          <p><strong>Supervising researchers:</strong> Ana Carolina Oran, Ph.D.; Leonardo Carneiro Marques, Ph.D.</p>
+          <p><strong>Researcher address:</strong> Av. Rodrigo Otavio, No. 6,200, North Sector, Manaus, Amazonas, Brazil, ZIP Code 69077-000</p>
+        </section>
+
+        <section class="section" id="invitation">
+          <h2>2. Invitation to Participate</h2>
+          <p>
+            This informed consent form applies to participation in research studies investigating
+            the adoption and use of Software Engineering and Testing practices in the development of
+            Artificial Intelligence and Machine Learning (AI/ML) models and in the integration of
+            AI/ML models into software systems.
+          </p>
+          <p>
+            Participation is entirely voluntary. You may decline participation, stop participating at
+            any time, or refuse to answer any question without penalty or negative consequence.
+          </p>
+        </section>
+
+        <section class="section" id="purpose">
+          <h2>3. Purpose of the Study</h2>
+          <p>
+            The general objective of this research is to investigate the current adoption of
+            Software Engineering and Testing principles and practices in AI/ML development contexts
+            and to support the design of a structured development process for AI/ML model
+            development and AI/ML-enabled software systems, grounded in evidence from academic and
+            industrial practice.
+          </p>
+          <p>
+            Specific objectives include identifying and assessing the adoption of traditional and
+            AI/ML-tailored Software Engineering and Testing principles and practices in academic and
+            industrial contexts, examining how quality-related practices are incorporated into AI/ML
+            development processes, analyzing existing development procedures in academic and
+            industrial scenarios, and supporting the proposal of a more structured and
+            quality-oriented development process for AI/ML-enabled software systems.
+          </p>
+        </section>
+
+        <section class="section" id="procedures">
+          <h2>4. Participation Procedures</h2>
+          <p>
+            If you agree to participate, you will be asked to complete an online survey
+            questionnaire containing questions about Software Engineering and Testing principles and
+            practices related to the development of AI/ML models and AI/ML-enabled software systems.
+          </p>
+          <p>
+            The questionnaire is expected to take approximately 20 to 40 minutes. Survey responses
+            will be collected and stored only for the time necessary to conduct data organization,
+            cleaning, analysis, and reporting of research results.
+          </p>
+          <p>
+            Information about participant location, such as country or region, may be collected
+            only to support analysis of geographic diversity and representation in the study. Study
+            results may be published in academic papers, reports, dissertations, theses, or
+            presentations in aggregated or anonymized form.
+          </p>
+        </section>
+
+        <section class="section" id="risks">
+          <h2>5. Risks and Discomforts</h2>
+          <p>
+            All research involving human participants includes some level of risk; however, the
+            risks associated with this study are considered minimal. The study consists exclusively
+            of answering an online survey and does not request directly identifying personal
+            information or sensitive questions about private life, health, beliefs, or unrelated
+            personal matters.
+          </p>
+          <p>
+            Possible risks include mild discomfort, inconvenience, or fatigue while answering the
+            survey. To reduce these risks, participation is voluntary, you may stop at any time
+            without penalty, you may skip any question you do not wish to answer, and no directly
+            identifying personal information will be requested.
+          </p>
+          <p>
+            If you leave the survey and return later, you may resume it without penalty from where
+            you stopped. If you drop the survey and do not finish it within 24 hours, you may
+            receive one reminder to return and complete it.
+          </p>
+        </section>
+
+        <section class="section" id="benefits">
+          <h2>6. Expected Benefits</h2>
+          <p>
+            This study may not provide direct personal benefit to participants. However, it is
+            expected to contribute to a better understanding of how Software Engineering and Testing
+            practices are currently adopted in AI/ML development in both academic and industrial
+            settings.
+          </p>
+          <p>
+            Expected benefits include generating empirical evidence on the adoption of Software
+            Engineering and Testing practices in AI/ML development, identifying challenges, gaps,
+            and improvement opportunities in current AI/ML development processes, and supporting
+            future design of a more structured and quality-oriented development process for AI/ML
+            models and AI/ML-enabled software systems.
+          </p>
+        </section>
+
+        <section class="section" id="confidentiality">
+          <h2>7. Privacy, Confidentiality, and Data Use</h2>
+          <p>
+            All information collected in this survey will be treated confidentially and used
+            exclusively for academic and scientific purposes. The survey does not request your
+            name, the name of your organization, or other directly identifying personal
+            information.
+          </p>
+          <p>
+            The research team will make every reasonable effort to preserve confidentiality and to
+            present results only in aggregated or anonymized form. Any location-related information,
+            such as country or region, will be used only for diversity and representation analysis.
+          </p>
+        </section>
+
+        <section class="section" id="voluntary">
+          <h2>8. Voluntary Participation and Withdrawal</h2>
+          <p>
+            Your participation in this study is voluntary. You have the right not to participate, to
+            stop participating at any time, and to refuse to answer any question without penalty or
+            negative consequence.
+          </p>
+          <p>
+            To participate in this study, you must be 18 years of age or older.
+          </p>
+        </section>
+
+        <section class="section" id="compensation">
+          <h2>9. Costs, Compensation, or Reimbursement</h2>
+          <p>
+            Participation in this survey does not involve any expected financial cost to you, and no
+            payment or financial reward will be provided for participation.
+          </p>
+          <p>
+            If any exceptional expense directly related to participation in this study occurs, you
+            may contact the research team for clarification and appropriate handling in accordance
+            with the ethical procedures applicable to the study.
+          </p>
+        </section>
+
+        <section class="section" id="contacts">
+          <h2>10. Contacts for Questions</h2>
+          <p>
+            If you have questions about this study, your rights as a participant, or the use of
+            your information, you may contact:
+          </p>
+          <p>
+            <strong>Felipe Sonntag Manzoni</strong><br />
+            Email: <a href="mailto:fsm2@icomp.ufam.edu.br">fsm2@icomp.ufam.edu.br</a><br />
+            Institution: Federal University of Amazonas (UFAM) / Institute of Computing (IComp)
+          </p>
+          <p>
+            <strong>Research Ethics Committee of the Federal University of Amazonas (CEP/UFAM)</strong><br />
+            Escola de Enfermagem de Manaus, Room 07, Rua Teresina, 495, Adrianopolis, Manaus, AM, Brazil<br />
+            Telephone: +55 (92) 3305-1181, extension 2004<br />
+            Email: <a href="mailto:cep.ufam@gmail.com">cep.ufam@gmail.com</a>
+          </p>
+          <p>
+            This research has been submitted to and reviewed through the appropriate ethical review
+            procedures of the Federal University of Amazonas via Plataforma Brasil.
+          </p>
+        </section>
+
+        <section class="section" id="statement">
+          <h2>11. Consent Statement</h2>
+          <p>
+            By agreeing to participate, you confirm that you have read, or had read to you, the
+            information contained in this informed consent form; that you understand the purpose and
+            procedures of the study; that you understand your participation is voluntary; that you
+            may stop participating at any time without penalty; that you are 18 years of age or
+            older; and that you freely and voluntarily agree to participate in this study.
+          </p>
+        </section>
+
+        <section class="section" id="signature">
+          <h2>12. Signature Reference</h2>
+          <p>
+            The complete approved consent text is available in the downloadable PDF linked at the
+            top of this page. This HTML version is provided to make the form easier to read online.
+          </p>
+
+          <div class="signature">
+            <div class="signature-box">
+              <h3>Researcher</h3>
+              <p>Felipe Sonntag Manzoni</p>
+              <p class="small">Principal investigator for the SE4AI study.</p>
+            </div>
+            <div class="signature-box">
+              <h3>Date / Version</h3>
+              <p><span id="last-updated"></span></p>
+              <p class="small">Online adaptation based on the current Survey ICF PDF.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="card">
+        <h2>Participant Guide</h2>
+        <div class="meta">
+          <div class="meta-box">
+            <strong>Before participating</strong>
+            <p>Read the online summary carefully and download the PDF if you want the original formatted version.</p>
+          </div>
+          <div class="meta-box">
+            <strong>Applies to</strong>
+            <p>Adults aged 18 or older who are invited to answer the SE4AI survey questionnaire.</p>
+          </div>
+          <div class="meta-box">
+            <strong>Need help?</strong>
+            <p>Use the researcher or ethics committee contacts on this page if any section is unclear.</p>
+          </div>
+        </div>
+
+        <h2>Page Sections</h2>
+        <ol class="toc">
+          <li><a href="#study-identification">Study Identification</a></li>
+          <li><a href="#invitation">Invitation to Participate</a></li>
+          <li><a href="#purpose">Purpose of the Study</a></li>
+          <li><a href="#procedures">Participation Procedures</a></li>
+          <li><a href="#risks">Risks and Discomforts</a></li>
+          <li><a href="#benefits">Expected Benefits</a></li>
+          <li><a href="#confidentiality">Privacy and Confidentiality</a></li>
+          <li><a href="#voluntary">Voluntary Participation</a></li>
+          <li><a href="#compensation">Costs or Compensation</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#statement">Consent Statement</a></li>
+          <li><a href="#signature">Signature Reference</a></li>
+        </ol>
+
+        <div class="note">
+          <strong>Key participation facts</strong>
+          <p>
+            Participation is voluntary, the survey takes about 20 to 40 minutes, and you may stop
+            or skip questions at any time without penalty.
+          </p>
+          <p>
+            No payment is offered, no directly identifying personal information is requested, and
+            reported results are intended to be aggregated or anonymized.
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Public research consent page maintained by Felipe Sonntag Manzoni. This HTML page provides a
+      readable web version of the SE4AI informed consent form together with the original PDF copy.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("last-updated").textContent = new Date().toISOString().slice(0, 10);
+  </script>
+</body>
+</html>
