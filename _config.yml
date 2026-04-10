@@ -10,6 +10,18 @@ plugins:
   - jekyll-seo-tag
 markdown: kramdown
 
+collections:
+  blog_posts:
+    output: true
+    permalink: /blog/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "blog_posts"
+    values:
+      layout: blog_post
+
 logo: assets/images/Professional_Perfil_Close.jpg
 show_downloads: false
 

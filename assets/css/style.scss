@@ -160,6 +160,143 @@ body.reading-layout .wrapper {
   max-width: 860px;
 }
 
+.blog-index-copy {
+  margin-bottom: 2rem;
+}
+
+.blog-index-copy p {
+  text-align: justify;
+  color: var(--muted);
+}
+
+.blog-post-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.blog-post-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(180deg, var(--surface) 0%, var(--surface-soft) 100%);
+  box-shadow: 0 12px 28px -20px var(--shadow);
+}
+
+.blog-post-card.has-image {
+  grid-template-columns: minmax(0, 1.7fr) minmax(180px, 0.9fr);
+  align-items: center;
+}
+
+.blog-post-card-body {
+  min-width: 0;
+}
+
+.blog-post-card-meta,
+.blog-post-kicker,
+.blog-post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.blog-post-card-meta {
+  margin-bottom: 0.6rem;
+}
+
+.blog-post-card-title {
+  margin: 0 0 0.6rem;
+}
+
+.blog-post-card-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.blog-post-card-title a:hover {
+  color: var(--link);
+}
+
+.blog-post-card-description {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  text-align: justify;
+}
+
+.blog-post-card-cta {
+  font-weight: 600;
+}
+
+.blog-post-card-image {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.blog-post-shell {
+  max-width: 860px;
+}
+
+.blog-back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.blog-post-header {
+  margin-bottom: 1.75rem;
+}
+
+.blog-post-kicker {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+}
+
+.blog-post-title {
+  margin: 0;
+  line-height: 1.1;
+}
+
+.blog-post-meta {
+  margin: 0.85rem 0;
+}
+
+.blog-post-description {
+  font-size: 1.05rem;
+  color: var(--muted);
+  text-align: justify;
+}
+
+.blog-post-hero {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  margin-top: 1.25rem;
+}
+
+.blog-post-content > :first-child {
+  margin-top: 0;
+}
+
+.blog-post-empty {
+  padding: 1.25rem;
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+  color: var(--muted);
+  background: var(--surface-soft);
+}
+
 /* ------- Perfil Photo config --------- */
 // Verificar melhoria para apresentar a foto ao lado esquerdo da descrição
 // To-do: Adicionar para que a foto não seja esprimida de forma alguma
@@ -387,6 +524,10 @@ body.reading-layout .wrapper {
     body.reading-layout .wrapper {
       width: auto;
       padding: 6.5rem 1rem 1rem;
+    }
+
+    .blog-post-card.has-image {
+      grid-template-columns: 1fr;
     }
 }
 
