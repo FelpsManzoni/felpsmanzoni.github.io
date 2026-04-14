@@ -76,7 +76,27 @@
             </header>
 
             <section>
-                {{ content }}
+                <a class="blog-back-link" href="{{ '/blog/' | relative_url }}">← Back to blog</a>
+
+                {% if page.header_image %}
+                <div class="blog-post-header-image">
+                    <img src="{{ page.header_image }}" alt="{{ page.header_image_alt }}" />
+                </div>
+                {% endif %}
+
+                <h1 class="blog-post-title">{{ page.title }}</h1>
+
+                {% if page.tags and page.tags.size > 0 %}
+                    <div class="blog-post-tags" aria-label="Post tags">
+                    {% for tag in page.tags %}
+                        <span class="blog-post-tag">{{ tag }}</span>
+                    {% endfor %}
+                    </div>
+                {% endif %}
+
+                <div class="blog-post-content">
+                    {{ content }}
+                </div>
             </section>
 
             <footer>

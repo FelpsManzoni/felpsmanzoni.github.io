@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     </head>
 
-    <body style="padding: 20px;">
+    <body class="reading-layout" style="padding: 20px;">
         <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Toggle theme">
             <span class="theme-toggle-icon" aria-hidden="true">☀</span>
         </button>
@@ -57,14 +57,23 @@
                 {% endif %}
                   <div class="profile-photo-holder">
                       <p class="description-holder">
-                      {{ site.description | default: site.github.project_tagline }}
+                      {{ site.description }}
                       </p>
                   </div>
                 </div>
             </header>
 
-            <section>
-                {{ content }}
+            <section class="reading-main">
+                <header class="reading-header">
+                    <h1 class="reading-title">{{ page.title }}</h1>
+                    {% if page.page_intro %}
+                      <p class="reading-intro">{{ page.page_intro }}</p>
+                    {% endif %}
+                </header>
+
+                <div class="reading-content">
+                    {{ content }}
+                </div>
             </section>
 
             <footer>
