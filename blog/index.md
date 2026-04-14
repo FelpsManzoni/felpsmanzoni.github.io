@@ -1,5 +1,5 @@
 ---
-layout: reading
+layout: projects
 title: Manzoni's Blog
 permalink: /blog/
 page_intro: Notes, updates, and reflections on research, software quality, and engineering practice.
@@ -7,7 +7,7 @@ page_intro: Notes, updates, and reflections on research, software quality, and e
 
 <div class="blog-index-copy">
   <p>
-    This section is now organized around reusable post cards. Each entry can show a title, a short description, optional metadata, and an optional preview image before linking to its full page.
+    Let's discuss and explore the world and the Software Engineering community together.
   </p>
 </div>
 
