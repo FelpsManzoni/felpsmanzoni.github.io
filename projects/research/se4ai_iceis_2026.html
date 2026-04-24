@@ -24,12 +24,95 @@
     pre{white-space:pre-wrap;margin:0;background:#0f1220;border:1px solid var(--border);border-radius:12px;padding:12px;color:var(--text);}
     code{background:#0f1220;border:1px solid var(--border);padding:2px 6px;border-radius:8px;}
     footer{margin-top:16px;color:var(--muted);font-size:.9rem;}
+    .survey-callout{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:20px;
+      margin-bottom:18px;
+      padding:22px;
+      border-radius:20px;
+      border:1px solid #2a3350;
+      background:
+        radial-gradient(circle at top left, rgba(122,162,255,.26), transparent 42%),
+        linear-gradient(135deg, #141a2e 0%, #0f1220 100%);
+      box-shadow:0 18px 40px rgba(0,0,0,.25);
+      overflow:hidden;
+    }
+    .survey-copy h2{margin:0 0 10px;font-size:1.55rem;}
+    .survey-copy p{margin:0 0 12px;color:#c9d0e3;font-size:1rem;text-align: justify;}
+    .survey-kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      margin-bottom:12px;
+      padding:6px 10px;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:999px;
+      background:rgba(255,255,255,.04);
+      color:#d9e3ff;
+      font-size:.85rem;
+      letter-spacing:.02em;
+    }
+    .survey-btn{
+      display:inline-block;
+      margin-top:6px;
+      padding:12px 18px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.14);
+      background:#7aa2ff;
+      color:#08101f;
+      font-weight:700;
+      text-decoration:none;
+      box-shadow:0 10px 22px rgba(122,162,255,.22);
+    }
+    .survey-btn:hover{text-decoration:none;background:#97b6ff;}
+    .survey-note{font-size:.92rem;color:#aeb7ce;}
+    .survey-media{display:none;}
+    .survey-media img{
+      display:block;
+      width:100%;
+      height:100%;
+      max-height:240px;
+      object-fit:cover;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.08);
+      background:#0b0c10;
+    }
+    @media (min-width: 880px){
+      .survey-callout{
+        grid-template-columns:minmax(0, 1fr) minmax(360px, 1fr);
+        align-items:center;
+      }
+      .survey-media{display:block;}
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="grid">
+    <section class="survey-callout" aria-labelledby="survey-callout-title">
+      <div class="survey-copy">
+        <div class="survey-kicker">📣 Share your perspective</div>
+        <h2 id="survey-callout-title">Help shape this research 🚀</h2>
+        <p>
+          Your experience with AI/ML-enabled software development can directly strengthen the next iteration of this work.
+          If you have a few minutes, please answer the survey and contribute evidence that matters.
+        </p>
+        <a
+          class="survey-btn"
+          href="https://forms.gle/8hCCboRrZ6DxkZYw8"
+          target="_blank"
+          rel="noopener"
+        >Respond survey now!</a>
+      </div>
 
+      <div class="survey-media" aria-hidden="true">
+        <img
+          src="../assets/Survey_Header.jpeg"
+          alt="Survey header artwork"
+        />
+      </div>
+    </section>
+    <div class="grid">
       <div class="card">
         <h1>Structuring a Development Process for AI/ML Projects: a look into industry driven issues</h1>
         <p>
