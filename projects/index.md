@@ -17,7 +17,7 @@ page_intro: Ongoing research projects, selected publications, and work currently
             <h3> PhD. Research - SE4AI process development </h3>
             <h3>2026</h3>
             <h4 style="margin: 0; font-size: 15px">
-                <a href="https://felpsmanzoni.github.io/projects/research/se4ai_icse_2026" target="_blank">
+                <a href="https://felpsmanzoni.github.io/projects/research/se4ai_iceis_2026" target="_blank">
                     Structuring a Development Process for AI/ML Projects: a look into industry driven issues
                 </a>
             </h4>
