@@ -330,7 +330,7 @@ I am currently:
       <span class="icon" aria-hidden="true">
         <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="18" height="18" alt="Email">
       </span>
-      <a href="mailto:fsm2@icomp.ufam.edu.br">fsm2@icomp.ufam.edu.br</a>
+      <a href="mailto:felipe.manzoni@icomp.ufam.edu.br">felipe.manzoni@icomp.ufam.edu.br</a>
     </li>
     <li>
       <span class="icon" aria-hidden="true">🎓</span>
