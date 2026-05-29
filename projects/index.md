@@ -17,6 +17,20 @@ page_intro: Ongoing research projects, selected publications, and work currently
             <h3> PhD. Research - SE4AI process development </h3>
             <h3>2026</h3>
             <h4 style="margin: 0; font-size: 15px">
+              <a href="">
+                (Co-author) Applying Usability Testing to Conversational Systems in an Internet of Things Context: An Industry Experience Report
+              </a>
+            </h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+              Camilla R. Gomes, Marcos W. C. dos Santos, Felipe S. Manzoni, Leonardo Marques, Oswald M. Ekwoge
+            </h4>
+            <h4 style="margin: 0; font-weight: normal; font-style: italic;">
+                11º Workshop sobre Aspectos Sociais, Humanos e Econômicos de Software (WASHES 2026) - Full Paper
+            </h4>
+            <h4 style="font-weight: normal; margin: 0 0 10px;">
+                Gramado/Rio Grande do Sul - Brazil
+            </h4>
+            <h4 style="margin: 0; font-size: 15px">
                 <a href="https://felpsmanzoni.github.io/projects/research/se4ai_iceis_2026" target="_blank">
                     Structuring a Development Process for AI/ML Projects: a look into industry driven issues
                 </a>
